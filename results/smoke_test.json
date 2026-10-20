@@ -1,0 +1,22 @@
+{
+  "1. CUDA + kernels": {
+    "ok": true,
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "vram_gib": 7.96,
+    "capability": "12.0"
+  },
+  "2. bitsandbytes 8-bit reward model": {
+    "ok": true,
+    "toy_reward": 2.724609375
+  },
+  "3. PPO worst-case memory (policy + value + reward resident, fwd/bwd)": {
+    "ok": true,
+    "seq_len": 768,
+    "peak_reserved_gib": 7.81,
+    "headroom_gib": 0.15
+  },
+  "4. Generation throughput (policy, 256 new tokens)": {
+    "ok": true,
+    "gen_tok_per_s_batch4": 83.4
+  }
+}

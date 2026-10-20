@@ -28,3 +28,11 @@ data/*
 # Misc
 *.zip
 .DS_Store
+
+# Report (kept local, not pushed)
+report/
+
+# Model weights / tensors (too large for GitHub)
+*.safetensors
+*.pt
+*.bin

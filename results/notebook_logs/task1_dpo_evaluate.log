@@ -1,0 +1,37 @@
+$ d:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\.venv\Scripts\python.exe -u -m task1_dpo.evaluate --config configs/dpo.yaml --adapter outputs/task1_dpo/standard --name standard
+W1008 02:26:38.422000 10856 .venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+[eval:standard] adapter=outputs/task1_dpo/standard eval_file=data/dpo_standard_eval.jsonl (300 pairs)
+[pairs] batch 1/73
+[pairs] batch 11/73
+[pairs] batch 21/73
+[pairs] batch 31/73
+[pairs] batch 41/73
+[pairs] batch 51/73
+[pairs] batch 61/73
+[pairs] batch 71/73
+[eval:standard] pairs: acc=0.641 loss=0.6735 margin=0.466
+[eval:standard] generating for 272 prompts (28 skipped as > 512 tokens)
+[eval:standard] generation batch 1/17 (0s elapsed)
+[eval:standard] generation batch 2/17 (19s elapsed)
+[eval:standard] generation batch 3/17 (33s elapsed)
+[eval:standard] generation batch 4/17 (47s elapsed)
+[eval:standard] generation batch 5/17 (62s elapsed)
+[eval:standard] generation batch 6/17 (76s elapsed)
+[eval:standard] generation batch 7/17 (91s elapsed)
+[eval:standard] generation batch 8/17 (105s elapsed)
+[eval:standard] generation batch 9/17 (124s elapsed)
+[eval:standard] generation batch 10/17 (138s elapsed)
+[eval:standard] generation batch 11/17 (154s elapsed)
+[eval:standard] generation batch 12/17 (169s elapsed)
+[eval:standard] generation batch 13/17 (184s elapsed)
+[eval:standard] generation batch 14/17 (199s elapsed)
+[eval:standard] generation batch 15/17 (214s elapsed)
+[eval:standard] generation batch 16/17 (231s elapsed)
+[eval:standard] generation batch 17/17 (247s elapsed)
+[eval:standard:word-limit] generation batch 1/4 (0s elapsed)
+[eval:standard:word-limit] generation batch 2/4 (4s elapsed)
+[eval:standard:word-limit] generation batch 3/4 (11s elapsed)
+[eval:standard:word-limit] generation batch 4/4 (17s elapsed)
+[reward] scoring 272 responses with the reward model
+[eval:standard] gen: reward=1.284 kl_tok=0.0001 len=158.9±104.9 word-limit=0.44
+[eval:standard] wrote D:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\results\task1_dpo\standard\eval_dpo_standard_eval.json (7.3 min)

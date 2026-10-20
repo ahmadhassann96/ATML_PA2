@@ -1,0 +1,45 @@
+{
+  "name": "midpoint",
+  "adapter": "checkpoints/ppo_midpoint_policy",
+  "n_prompts": 96,
+  "n_prompts_skipped_long": 15,
+  "max_new_tokens": 768,
+  "seed": 6304,
+  "generation": {
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "do_sample": true
+  },
+  "reward_raw_mean": 1.8225924173990886,
+  "reward_raw_std": 1.1955907013921148,
+  "reward_raw_ci95": [
+    1.5651304880777994,
+    2.042091719309489
+  ],
+  "reward_mean": 1.7288424173990886,
+  "reward_ci95": [
+    1.461822509765625,
+    1.9633019765218098
+  ],
+  "missing_eos_penalty": 1.0,
+  "kl_token_mean": -2.485334405660904e-05,
+  "kl_seq_mean": -0.0073850676308211405,
+  "kl_seq_ci95": [
+    -0.023392662943448765,
+    0.009808466810773093
+  ],
+  "entropy_mean": 0.940220654864485,
+  "response_tokens": {
+    "mean": 297.1458333333333,
+    "std": 259.54591674558384,
+    "median": 222.5,
+    "q25": 65.0,
+    "q75": 533.5,
+    "iqr": 468.5,
+    "max": 768.0,
+    "n": 96
+  },
+  "truncation_rate": 0.09375,
+  "eos_rate": 0.90625,
+  "wall_clock_s": 196.7
+}

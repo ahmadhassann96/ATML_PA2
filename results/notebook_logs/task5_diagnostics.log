@@ -1,0 +1,45 @@
+$ d:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\.venv\Scripts\python.exe -u -m task5_feedback.score_perturbations --config configs/feedback.yaml
+[task5:diagnostics] 20 problems x 5 variants
+[task5:diagnostics] verifier vs expected_exact_reward mismatches: 0
+W1011 00:48:15.536000 2944 .venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.02s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.16s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.29s/it]
+[task5:diagnostics] judging problem 1/20 (0s)
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[task5:diagnostics] judging problem 2/20 (4s)
+[task5:diagnostics] judging problem 3/20 (7s)
+[task5:diagnostics] judging problem 4/20 (10s)
+[task5:diagnostics] judging problem 5/20 (13s)
+[task5:diagnostics] judging problem 6/20 (17s)
+[task5:diagnostics] judging problem 7/20 (21s)
+[task5:diagnostics] judging problem 8/20 (25s)
+[task5:diagnostics] judging problem 9/20 (28s)
+[task5:diagnostics] judging problem 10/20 (31s)
+[task5:diagnostics] judging problem 11/20 (34s)
+[task5:diagnostics] judging problem 12/20 (39s)
+[task5:diagnostics] judging problem 13/20 (42s)
+[task5:diagnostics] judging problem 14/20 (45s)
+[task5:diagnostics] judging problem 15/20 (49s)
+[task5:diagnostics] judging problem 16/20 (52s)
+[task5:diagnostics] judging problem 17/20 (55s)
+[task5:diagnostics] judging problem 18/20 (58s)
+[task5:diagnostics] judging problem 19/20 (62s)
+[task5:diagnostics] judging problem 20/20 (65s)
+[task5:diagnostics] category    mechanism        better  tie    wrong
+[task5:diagnostics] reasoning   rlvr             0.00   1.00   0.00
+[task5:diagnostics] reasoning   rlaif_pairwise   0.00   1.00   0.00
+[task5:diagnostics] reasoning   rlaif_group      0.10   0.75   0.15
+[task5:diagnostics] outcome     rlvr             1.00   0.00   0.00
+[task5:diagnostics] outcome     rlaif_pairwise   0.00   1.00   0.00
+[task5:diagnostics] outcome     rlaif_group      0.30   0.55   0.15
+[task5:diagnostics] filler      rlvr             0.00   1.00   0.00
+[task5:diagnostics] filler      rlaif_pairwise   0.00   0.75   0.25
+[task5:diagnostics] filler      rlaif_group      0.10   0.50   0.40
+[task5:diagnostics] distractor  rlvr             1.00   0.00   0.00
+[task5:diagnostics] distractor  rlaif_pairwise   0.25   0.70   0.05
+[task5:diagnostics] distractor  rlaif_group      0.40   0.50   0.10
+[task5:diagnostics] S_reason {'rlvr': 0.0, 'rlaif_pairwise': 0.0, 'rlaif_group': 0.1} | S_outcome {'rlvr': 1.0, 'rlaif_pairwise': 0.0, 'rlaif_group': 0.3}
+[task5:diagnostics] judge position consistency 0.8095238095238095 on 42 opposite-order pairs

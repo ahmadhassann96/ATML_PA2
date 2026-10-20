@@ -1,0 +1,94 @@
+{
+  "name": "beta_0.3",
+  "adapter": "outputs/task1_dpo/beta_0.3",
+  "eval_file": "data/dpo_standard_eval.jsonl",
+  "seed": 6304,
+  "generation": {
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "do_sample": true,
+    "max_new_tokens": 256
+  },
+  "pairs": {
+    "beta_for_loss": 0.3,
+    "n_dropped_long_prompts": 10,
+    "overall": {
+      "n_pairs": 290,
+      "dpo_loss": 0.678791628315531,
+      "preference_accuracy": 0.6482758620689655,
+      "preference_accuracy_ci95": [
+        0.593103448275862,
+        0.696551724137931
+      ],
+      "mean_margin": 0.10910537504944308,
+      "policy_logp_prefers_chosen": 0.496551724137931,
+      "ref_logp_prefers_chosen": 0.496551724137931,
+      "chosen_longer_frac": 0.503448275862069
+    }
+  },
+  "generation_metrics": {
+    "n_responses": 272,
+    "kl_token_mean": -0.0003056307141702611,
+    "kl_seq_mean": -0.048239088933983376,
+    "reward_mean": 1.298327922821045,
+    "reward_std": 1.237426034115157,
+    "reward_ci95": [
+      1.1496683513416963,
+      1.4395399570465086
+    ],
+    "entropy_mean": 0.8674369418226621,
+    "response_tokens": {
+      "mean": 157.83455882352942,
+      "std": 104.5448390142299,
+      "median": 224.0,
+      "q25": 42.5,
+      "q75": 256.0,
+      "iqr": 213.5,
+      "max": 256.0,
+      "n": 272
+    },
+    "response_words": {
+      "mean": 113.54411764705883,
+      "std": 77.08521522687988,
+      "median": 127.5,
+      "q25": 31.0,
+      "q75": 185.0,
+      "iqr": 154.0,
+      "max": 236.0,
+      "n": 272
+    },
+    "truncation_rate": 0.45955882352941174,
+    "n_prompts_skipped_long": 28
+  },
+  "word_limit": {
+    "n_prompts": 10,
+    "samples_per_prompt": 5,
+    "compliance_rate": 0.62,
+    "compliance_ci95": [
+      0.48,
+      0.74
+    ],
+    "words_over_limit_mean": 7.12,
+    "response_words": {
+      "mean": 38.52,
+      "std": 18.782161749915794,
+      "median": 31.0,
+      "q25": 25.0,
+      "q75": 45.75,
+      "iqr": 20.75,
+      "max": 94.0,
+      "n": 50
+    },
+    "response_tokens": {
+      "mean": 45.96,
+      "std": 21.775178529692933,
+      "median": 37.0,
+      "q25": 30.0,
+      "q75": 55.0,
+      "iqr": 25.0,
+      "max": 109.0,
+      "n": 50
+    }
+  },
+  "wall_clock_s": 433.0
+}

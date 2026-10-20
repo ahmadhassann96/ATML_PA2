@@ -1,0 +1,152 @@
+$ d:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\.venv\Scripts\python.exe -u -m task1_dpo.ablate_beta --config configs/dpo.yaml
+>>> d:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\.venv\Scripts\python.exe -m task1_dpo.train --config configs/dpo.yaml --run-name beta_0.03 --output outputs/task1_dpo/beta_0.03 --beta 0.03 --max-examples 600
+W1008 02:34:07.926000 21488 .venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+[beta_0.03] 580 pairs (20 dropped for long prompts), beta=0.03, 290 micro-batches/epoch, 37 optimizer updates
+[beta_0.03] update 1/37 loss=0.6931 acc=0.000 margin=0.000 |g|=0.534 t=10s eta=6.2min
+[beta_0.03] update 5/37 loss=0.6931 acc=0.562 margin=0.004 |g|=0.559 t=76s eta=8.1min
+[beta_0.03] update 10/37 loss=0.6932 acc=0.500 margin=-0.004 |g|=0.556 t=128s eta=5.8min
+[beta_0.03] update 15/37 loss=0.6927 acc=0.562 margin=0.031 |g|=0.591 t=180s eta=4.4min
+[beta_0.03] update 20/37 loss=0.6936 acc=0.562 margin=-0.030 |g|=0.921 t=239s eta=3.4min
+[beta_0.03] update 25/37 loss=0.6912 acc=0.688 margin=0.132 |g|=0.623 t=295s eta=2.4min
+[beta_0.03] update 30/37 loss=0.6919 acc=0.562 margin=0.081 |g|=0.567 t=544s eta=2.1min
+[beta_0.03] update 35/37 loss=0.6933 acc=0.500 margin=-0.007 |g|=0.587 t=1166s eta=1.1min
+[beta_0.03] update 37/37 loss=0.6943 acc=0.500 margin=-0.077 |g|=0.221 t=1416s eta=0.0min
+[beta_0.03] saved adapter to D:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\outputs\task1_dpo\beta_0.03 (23.6 min)
+>>> d:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\.venv\Scripts\python.exe -m task1_dpo.evaluate --config configs/dpo.yaml --adapter outputs/task1_dpo/beta_0.03 --name beta_0.03 --beta 0.03
+W1008 02:58:02.730000 10456 .venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+[eval:beta_0.03] adapter=outputs/task1_dpo/beta_0.03 eval_file=data/dpo_standard_eval.jsonl (300 pairs)
+[pairs] batch 1/73
+[pairs] batch 11/73
+[pairs] batch 21/73
+[pairs] batch 31/73
+[pairs] batch 41/73
+[pairs] batch 51/73
+[pairs] batch 61/73
+[pairs] batch 71/73
+[eval:beta_0.03] pairs: acc=0.648 loss=0.6914 margin=0.116
+[eval:beta_0.03] generating for 272 prompts (28 skipped as > 512 tokens)
+[eval:beta_0.03] generation batch 1/17 (0s elapsed)
+[eval:beta_0.03] generation batch 2/17 (19s elapsed)
+[eval:beta_0.03] generation batch 3/17 (33s elapsed)
+[eval:beta_0.03] generation batch 4/17 (49s elapsed)
+[eval:beta_0.03] generation batch 5/17 (63s elapsed)
+[eval:beta_0.03] generation batch 6/17 (82s elapsed)
+[eval:beta_0.03] generation batch 7/17 (96s elapsed)
+[eval:beta_0.03] generation batch 8/17 (112s elapsed)
+[eval:beta_0.03] generation batch 9/17 (127s elapsed)
+[eval:beta_0.03] generation batch 10/17 (143s elapsed)
+[eval:beta_0.03] generation batch 11/17 (159s elapsed)
+[eval:beta_0.03] generation batch 12/17 (174s elapsed)
+[eval:beta_0.03] generation batch 13/17 (189s elapsed)
+[eval:beta_0.03] generation batch 14/17 (204s elapsed)
+[eval:beta_0.03] generation batch 15/17 (219s elapsed)
+[eval:beta_0.03] generation batch 16/17 (236s elapsed)
+[eval:beta_0.03] generation batch 17/17 (253s elapsed)
+[eval:beta_0.03:word-limit] generation batch 1/4 (0s elapsed)
+[eval:beta_0.03:word-limit] generation batch 2/4 (4s elapsed)
+[eval:beta_0.03:word-limit] generation batch 3/4 (10s elapsed)
+[eval:beta_0.03:word-limit] generation batch 4/4 (16s elapsed)
+[reward] scoring 272 responses with the reward model
+[eval:beta_0.03] gen: reward=1.314 kl_tok=-0.0003 len=157.0±104.3 word-limit=0.62
+[eval:beta_0.03] wrote D:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\results\task1_dpo\beta_0.03\eval_dpo_standard_eval.json (7.4 min)
+>>> d:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\.venv\Scripts\python.exe -m task1_dpo.train --config configs/dpo.yaml --run-name beta_0.1 --output outputs/task1_dpo/beta_0.1 --beta 0.1 --max-examples 600
+W1008 03:05:31.468000 17300 .venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+[beta_0.1] 580 pairs (20 dropped for long prompts), beta=0.1, 290 micro-batches/epoch, 37 optimizer updates
+[beta_0.1] update 1/37 loss=0.6931 acc=0.000 margin=0.000 |g|=1.781 t=10s eta=6.1min
+[beta_0.1] update 5/37 loss=0.6941 acc=0.625 margin=-0.019 |g|=1.867 t=75s eta=8.0min
+[beta_0.1] update 10/37 loss=0.6920 acc=0.500 margin=0.023 |g|=1.850 t=128s eta=5.7min
+[beta_0.1] update 15/37 loss=0.6959 acc=0.500 margin=-0.053 |g|=1.980 t=180s eta=4.4min
+[beta_0.1] update 20/37 loss=0.6957 acc=0.375 margin=-0.049 |g|=3.131 t=239s eta=3.4min
+[beta_0.1] update 25/37 loss=0.6895 acc=0.625 margin=0.076 |g|=2.072 t=295s eta=2.4min
+[beta_0.1] update 30/37 loss=0.6909 acc=0.500 margin=0.047 |g|=1.882 t=543s eta=2.1min
+[beta_0.1] update 35/37 loss=0.6943 acc=0.562 margin=-0.021 |g|=1.952 t=1164s eta=1.1min
+[beta_0.1] update 37/37 loss=0.6981 acc=0.500 margin=-0.097 |g|=0.740 t=1413s eta=0.0min
+[beta_0.1] saved adapter to D:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\outputs\task1_dpo\beta_0.1 (23.6 min)
+>>> d:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\.venv\Scripts\python.exe -m task1_dpo.evaluate --config configs/dpo.yaml --adapter outputs/task1_dpo/beta_0.1 --name beta_0.1 --beta 0.1
+W1008 03:29:23.598000 17144 .venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+[eval:beta_0.1] adapter=outputs/task1_dpo/beta_0.1 eval_file=data/dpo_standard_eval.jsonl (300 pairs)
+[pairs] batch 1/73
+[pairs] batch 11/73
+[pairs] batch 21/73
+[pairs] batch 31/73
+[pairs] batch 41/73
+[pairs] batch 51/73
+[pairs] batch 61/73
+[pairs] batch 71/73
+[eval:beta_0.1] pairs: acc=0.652 loss=0.6875 margin=0.118
+[eval:beta_0.1] generating for 272 prompts (28 skipped as > 512 tokens)
+[eval:beta_0.1] generation batch 1/17 (0s elapsed)
+[eval:beta_0.1] generation batch 2/17 (19s elapsed)
+[eval:beta_0.1] generation batch 3/17 (33s elapsed)
+[eval:beta_0.1] generation batch 4/17 (49s elapsed)
+[eval:beta_0.1] generation batch 5/17 (63s elapsed)
+[eval:beta_0.1] generation batch 6/17 (77s elapsed)
+[eval:beta_0.1] generation batch 7/17 (92s elapsed)
+[eval:beta_0.1] generation batch 8/17 (106s elapsed)
+[eval:beta_0.1] generation batch 9/17 (121s elapsed)
+[eval:beta_0.1] generation batch 10/17 (136s elapsed)
+[eval:beta_0.1] generation batch 11/17 (151s elapsed)
+[eval:beta_0.1] generation batch 12/17 (170s elapsed)
+[eval:beta_0.1] generation batch 13/17 (185s elapsed)
+[eval:beta_0.1] generation batch 14/17 (200s elapsed)
+[eval:beta_0.1] generation batch 15/17 (216s elapsed)
+[eval:beta_0.1] generation batch 16/17 (232s elapsed)
+[eval:beta_0.1] generation batch 17/17 (252s elapsed)
+[eval:beta_0.1:word-limit] generation batch 1/4 (0s elapsed)
+[eval:beta_0.1:word-limit] generation batch 2/4 (3s elapsed)
+[eval:beta_0.1:word-limit] generation batch 3/4 (9s elapsed)
+[eval:beta_0.1:word-limit] generation batch 4/4 (14s elapsed)
+[reward] scoring 272 responses with the reward model
+[eval:beta_0.1] gen: reward=1.302 kl_tok=-0.0003 len=158.4±104.4 word-limit=0.6
+[eval:beta_0.1] wrote D:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\results\task1_dpo\beta_0.1\eval_dpo_standard_eval.json (7.4 min)
+>>> d:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\.venv\Scripts\python.exe -m task1_dpo.train --config configs/dpo.yaml --run-name beta_0.3 --output outputs/task1_dpo/beta_0.3 --beta 0.3 --max-examples 600
+W1008 03:36:50.712000 27020 .venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+[beta_0.3] 580 pairs (20 dropped for long prompts), beta=0.3, 290 micro-batches/epoch, 37 optimizer updates
+[beta_0.3] update 1/37 loss=0.6931 acc=0.000 margin=0.000 |g|=5.342 t=10s eta=6.1min
+[beta_0.3] update 5/37 loss=0.6924 acc=0.500 margin=0.007 |g|=5.583 t=76s eta=8.1min
+[beta_0.3] update 10/37 loss=0.6899 acc=0.625 margin=0.022 |g|=5.531 t=128s eta=5.8min
+[beta_0.3] update 15/37 loss=0.7023 acc=0.188 margin=-0.060 |g|=5.988 t=180s eta=4.4min
+[beta_0.3] update 20/37 loss=0.6916 acc=0.562 margin=0.012 |g|=9.177 t=239s eta=3.4min
+[beta_0.3] update 25/37 loss=0.6838 acc=0.625 margin=0.069 |g|=6.202 t=295s eta=2.4min
+[beta_0.3] update 30/37 loss=0.6866 acc=0.500 margin=0.051 |g|=5.587 t=542s eta=2.1min
+[beta_0.3] update 35/37 loss=0.6951 acc=0.562 margin=-0.007 |g|=5.829 t=1164s eta=1.1min
+[beta_0.3] update 37/37 loss=0.7004 acc=0.500 margin=-0.045 |g|=2.233 t=1413s eta=0.0min
+[beta_0.3] saved adapter to D:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\outputs\task1_dpo\beta_0.3 (23.6 min)
+>>> d:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\.venv\Scripts\python.exe -m task1_dpo.evaluate --config configs/dpo.yaml --adapter outputs/task1_dpo/beta_0.3 --name beta_0.3 --beta 0.3
+W1008 04:00:40.390000 31384 .venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+[eval:beta_0.3] adapter=outputs/task1_dpo/beta_0.3 eval_file=data/dpo_standard_eval.jsonl (300 pairs)
+[pairs] batch 1/73
+[pairs] batch 11/73
+[pairs] batch 21/73
+[pairs] batch 31/73
+[pairs] batch 41/73
+[pairs] batch 51/73
+[pairs] batch 61/73
+[pairs] batch 71/73
+[eval:beta_0.3] pairs: acc=0.648 loss=0.6788 margin=0.109
+[eval:beta_0.3] generating for 272 prompts (28 skipped as > 512 tokens)
+[eval:beta_0.3] generation batch 1/17 (0s elapsed)
+[eval:beta_0.3] generation batch 2/17 (19s elapsed)
+[eval:beta_0.3] generation batch 3/17 (33s elapsed)
+[eval:beta_0.3] generation batch 4/17 (47s elapsed)
+[eval:beta_0.3] generation batch 5/17 (62s elapsed)
+[eval:beta_0.3] generation batch 6/17 (76s elapsed)
+[eval:beta_0.3] generation batch 7/17 (90s elapsed)
+[eval:beta_0.3] generation batch 8/17 (104s elapsed)
+[eval:beta_0.3] generation batch 9/17 (119s elapsed)
+[eval:beta_0.3] generation batch 10/17 (134s elapsed)
+[eval:beta_0.3] generation batch 11/17 (150s elapsed)
+[eval:beta_0.3] generation batch 12/17 (164s elapsed)
+[eval:beta_0.3] generation batch 13/17 (179s elapsed)
+[eval:beta_0.3] generation batch 14/17 (194s elapsed)
+[eval:beta_0.3] generation batch 15/17 (209s elapsed)
+[eval:beta_0.3] generation batch 16/17 (226s elapsed)
+[eval:beta_0.3] generation batch 17/17 (242s elapsed)
+[eval:beta_0.3:word-limit] generation batch 1/4 (0s elapsed)
+[eval:beta_0.3:word-limit] generation batch 2/4 (4s elapsed)
+[eval:beta_0.3:word-limit] generation batch 3/4 (10s elapsed)
+[eval:beta_0.3:word-limit] generation batch 4/4 (16s elapsed)
+[reward] scoring 272 responses with the reward model
+[eval:beta_0.3] gen: reward=1.298 kl_tok=-0.0003 len=157.8±104.5 word-limit=0.62
+[eval:beta_0.3] wrote D:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\results\task1_dpo\beta_0.3\eval_dpo_standard_eval.json (7.2 min)
+wrote D:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\results\task1_dpo\summary_beta.csv

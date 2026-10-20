@@ -1,0 +1,45 @@
+{
+  "name": "standard",
+  "adapter": "outputs/task2_ppo/standard",
+  "n_prompts": 96,
+  "n_prompts_skipped_long": 15,
+  "max_new_tokens": 768,
+  "seed": 6304,
+  "generation": {
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "do_sample": true
+  },
+  "reward_raw_mean": 1.7425111134847004,
+  "reward_raw_std": 1.265406366214219,
+  "reward_raw_ci95": [
+    1.4631256739298502,
+    1.986185630162557
+  ],
+  "reward_mean": 1.6175111134847004,
+  "reward_ci95": [
+    1.3233295440673827,
+    1.8720216115315755
+  ],
+  "missing_eos_penalty": 1.0,
+  "kl_token_mean": 8.91084920359116e-06,
+  "kl_seq_mean": 0.0026625803063022127,
+  "kl_seq_ci95": [
+    -0.010220699725232407,
+    0.015393836457193773
+  ],
+  "entropy_mean": 0.9440463828699043,
+  "response_tokens": {
+    "mean": 298.8020833333333,
+    "std": 264.0595190084861,
+    "median": 222.5,
+    "q25": 65.0,
+    "q75": 522.0,
+    "iqr": 457.0,
+    "max": 768.0,
+    "n": 96
+  },
+  "truncation_rate": 0.125,
+  "eos_rate": 0.875,
+  "wall_clock_s": 197.5
+}

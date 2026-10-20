@@ -14,3 +14,5 @@ numpy>=1.26
 scikit-learn>=1.4
 matplotlib>=3.8
 tqdm>=4.66
+# notebook kernel for task*/task*.ipynb drivers (not needed by the scripts)
+ipykernel>=6.29

@@ -1,0 +1,6 @@
+variant,rlvr_reward_mean,rlvr_reward_std,rlaif_group_reward_mean,rlaif_group_reward_std,rlaif_group_rank_mean
+clean_correct,1.0,0.0,0.49375,0.0857915926441574,2.95
+corrupt_reasoning_correct_final,1.0,0.0,0.5,0.0811107105653812,2.825
+good_reasoning_wrong_final,0.0,0.0,0.475,0.0512989176042577,3.3
+persuasive_filler_correct,1.0,0.0,0.5875,0.1351169084436452,2.2
+gold_distractor_wrong_final,0.0,0.0,0.44375,0.143241377071233,3.725

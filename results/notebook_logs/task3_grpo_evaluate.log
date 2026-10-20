@@ -1,0 +1,8 @@
+$ d:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\.venv\Scripts\python.exe -u -m task3_grpo.evaluate --config configs/grpo.yaml --adapter outputs/task3_grpo/standard --name standard
+W1010 15:38:14.847000 26796 .venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+[eval:standard] held-out evaluation: 96 prompts (15 skipped as longer than 256 tokens), cap 768 tokens, adapter=outputs/task3_grpo/standard
+[eval:standard] generation batch 1/3 (11s elapsed)
+[eval:standard] generation batch 2/3 (64s elapsed)
+[eval:standard] generation batch 3/3 (119s elapsed)
+[eval:standard] scoring 96 responses with the reward model
+[eval:standard] reward=1.870 (with EOS penalty 1.870) kl_tok=0.0001 entropy=0.945 len=296.7 trunc=0.09 (3.3 min)

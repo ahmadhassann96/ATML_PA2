@@ -1,0 +1,145 @@
+{
+  "forks": [
+    {
+      "fork": "norm_grpo",
+      "loss_type": "grpo",
+      "train_generated_tokens": 7094,
+      "train_reward_mean": 1.4302215576171875,
+      "train_len_first": 85.5,
+      "train_len_last": 10.5,
+      "train_len_mean": 221.6875,
+      "train_grad_norm_mean": 0.7998362379148602,
+      "heldout_reward": 1.7854944864908855,
+      "heldout_reward_ci95": [
+        1.4979607899983725,
+        2.0425503412882486
+      ],
+      "heldout_kl_token": 3.2830606971126635e-05,
+      "heldout_kl_seq": 0.009913817348812396,
+      "heldout_entropy": 0.9415548627342408,
+      "heldout_len_mean": 301.96875,
+      "heldout_len_std": 265.8382361012755,
+      "heldout_truncation": 0.10416666666666667
+    },
+    {
+      "fork": "norm_dr_grpo",
+      "loss_type": "dr_grpo",
+      "train_generated_tokens": 6889,
+      "train_reward_mean": 1.5223312377929688,
+      "train_len_first": 85.5,
+      "train_len_last": 10.5,
+      "train_len_mean": 215.28125,
+      "train_grad_norm_mean": 0.06789124989882112,
+      "heldout_reward": 1.7377389520406723,
+      "heldout_reward_ci95": [
+        1.4573510424544414,
+        1.984249132250746
+      ],
+      "heldout_kl_token": 5.455698763263405e-05,
+      "heldout_kl_seq": 0.016413697050059756,
+      "heldout_entropy": 0.9459274090671291,
+      "heldout_len_mean": 300.8541666666667,
+      "heldout_len_std": 264.05022325176236,
+      "heldout_truncation": 0.10416666666666667
+    }
+  ],
+  "length_conditioned": {
+    "median_length_cut": 38.0,
+    "slopes": {
+      "norm_grpo": {
+        "loglog_slope_gradnorm_vs_length": -0.6425702153108307,
+        "corr_length_gradnorm": -0.48945216369880085,
+        "n": 24,
+        "corr_length_advantage": 0.30961968445959065
+      },
+      "norm_dr_grpo": {
+        "loglog_slope_gradnorm_vs_length": 0.1906656080170472,
+        "corr_length_gradnorm": 0.44881257942219505,
+        "n": 27,
+        "corr_length_advantage": 0.3084347836740874
+      }
+    }
+  },
+  "length_bins": [
+    {
+      "fork": "norm_grpo",
+      "advantage_sign": "A>0",
+      "length_bin": "short (<= 38 tok)",
+      "n": 5,
+      "mean_length": 20.0,
+      "mean_abs_advantage": 1.0532286643981934,
+      "mean_per_token_weight": 0.01611295435577631,
+      "mean_seq_grad_norm": 0.7062277972698212
+    },
+    {
+      "fork": "norm_grpo",
+      "advantage_sign": "A>0",
+      "length_bin": "long (> 38 tok)",
+      "n": 7,
+      "mean_length": 287.42857142857144,
+      "mean_abs_advantage": 1.027426255600793,
+      "mean_per_token_weight": 0.0015443700956114168,
+      "mean_seq_grad_norm": 0.13835262613637106
+    },
+    {
+      "fork": "norm_grpo",
+      "advantage_sign": "A<0",
+      "length_bin": "short (<= 38 tok)",
+      "n": 8,
+      "mean_length": 21.75,
+      "mean_abs_advantage": 0.873579066246748,
+      "mean_per_token_weight": 0.012728467096167151,
+      "mean_seq_grad_norm": 0.6458800677210093
+    },
+    {
+      "fork": "norm_grpo",
+      "advantage_sign": "A<0",
+      "length_bin": "long (> 38 tok)",
+      "n": 4,
+      "mean_length": 178.0,
+      "mean_abs_advantage": 0.9260440766811371,
+      "mean_per_token_weight": 0.0020475214550970122,
+      "mean_seq_grad_norm": 0.13924018200486898
+    },
+    {
+      "fork": "norm_dr_grpo",
+      "advantage_sign": "A>0",
+      "length_bin": "short (<= 38 tok)",
+      "n": 5,
+      "mean_length": 20.0,
+      "mean_abs_advantage": 1.0532286643981934,
+      "mean_per_token_weight": 0.0005142718087881804,
+      "mean_seq_grad_norm": 0.02244777660816908
+    },
+    {
+      "fork": "norm_dr_grpo",
+      "advantage_sign": "A>0",
+      "length_bin": "long (> 38 tok)",
+      "n": 8,
+      "mean_length": 337.0,
+      "mean_abs_advantage": 0.9699977971613407,
+      "mean_per_token_weight": 0.0004736317368951859,
+      "mean_seq_grad_norm": 0.05487005761824548
+    },
+    {
+      "fork": "norm_dr_grpo",
+      "advantage_sign": "A<0",
+      "length_bin": "short (<= 38 tok)",
+      "n": 8,
+      "mean_length": 21.75,
+      "mean_abs_advantage": 0.8736356757581234,
+      "mean_per_token_weight": 0.0004265799198037712,
+      "mean_seq_grad_norm": 0.020419223757926375
+    },
+    {
+      "fork": "norm_dr_grpo",
+      "advantage_sign": "A<0",
+      "length_bin": "long (> 38 tok)",
+      "n": 6,
+      "mean_length": 226.5,
+      "mean_abs_advantage": 0.5871478505432606,
+      "mean_per_token_weight": 0.00028669328639807645,
+      "mean_seq_grad_norm": 0.020219912907729547
+    }
+  ]
+}

@@ -1,9 +1,17 @@
+"""Task 3 held-out evaluation (same protocol as Task 2: common/rl_eval.py).
+
+    python -m task3_grpo.evaluate --adapter checkpoints/grpo_midpoint_policy --name midpoint
+    python -m task3_grpo.evaluate --adapter outputs/task3_grpo/standard --name standard
+"""
 from __future__ import annotations
 
 import argparse
 
 from common.data import load_yaml, read_jsonl
 from common.models import load_policy, load_reward_model, load_tokenizer
+from common.rl_eval import evaluate_policy
+
+DEFAULT_N_PROMPTS = 96
 
 
 def load_evaluation_bundle(config_path: str, adapter: str):
@@ -17,16 +25,26 @@ def load_evaluation_bundle(config_path: str, adapter: str):
     }
 
 
+def eval_cap(cfg) -> int:
+    # configs/grpo.yaml has no explicit evaluation cap; use the course's 768-token cap (same as PPO evaluation
+    # and the supplied K-cache), so PPO and GRPO policies are evaluated identically.
+    return int(cfg.get("eval_max_response_length", cfg.get("cache_generation_cap", 768)))
+
+
+def run_evaluation(config_path, adapter, name, n_prompts=DEFAULT_N_PROMPTS):
+    cfg = load_yaml(config_path)
+    return evaluate_policy(cfg, adapter, name, cfg["results_dir"], n_prompts=n_prompts, max_new_tokens=eval_cap(cfg),
+                           label=f"eval:{name}")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--config", default="configs/grpo.yaml")
-    ap.add_argument("--adapter", required=True)
+    ap.add_argument("--adapter", required=True, help="adapter directory, or 'none' for the base SFT policy")
     ap.add_argument("--name", default="standard")
+    ap.add_argument("--n-prompts", type=int, default=DEFAULT_N_PROMPTS)
     args = ap.parse_args()
-    load_evaluation_bundle(args.config, args.adapter)
-    raise NotImplementedError(
-        "TODO(student): implement the common held-out GRPO evaluation and save the required metrics/examples."
-    )
+    run_evaluation(args.config, args.adapter, args.name, args.n_prompts)
 
 
 if __name__ == "__main__":

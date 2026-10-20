@@ -1,0 +1,15 @@
+$ d:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\.venv\Scripts\python.exe -u -m scripts.test_objectives
+PASS  test_dpo_at_initialisation_is_log2
+PASS  test_dpo_matches_manual_formula
+PASS  test_dpo_gradient_direction
+PASS  test_ppo_clip_positive_advantage
+PASS  test_ppo_clip_negative_advantage
+PASS  test_ppo_inside_trust_region_is_unclipped
+PASS  test_ppo_mask_ignores_padding
+PASS  test_gae_matches_brute_force
+PASS  test_shaped_rewards_kl_and_terminal
+PASS  test_gae_terminal_reward
+PASS  test_grpo_advantages_are_per_group
+PASS  test_grpo_advantages_invariant_to_other_groups
+PASS  test_grpo_loss_normalisations
+13/13 passed

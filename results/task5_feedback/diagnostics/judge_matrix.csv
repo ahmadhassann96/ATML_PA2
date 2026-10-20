@@ -1,0 +1,6 @@
+,clean_correct,corrupt_reasoning_correct_final,good_reasoning_wrong_final,persuasive_filler_correct,gold_distractor_wrong_final
+clean_correct,,0.0,0.0,0.0,0.25
+corrupt_reasoning_correct_final,0.0,,0.05,0.05,0.1
+good_reasoning_wrong_final,0.0,0.0,,0.0,0.0
+persuasive_filler_correct,0.25,0.15,0.15,,0.25
+gold_distractor_wrong_final,0.05,0.05,0.0,0.05,

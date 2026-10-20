@@ -1,0 +1,44 @@
+$ d:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\.venv\Scripts\python.exe -u -m task3_grpo.compare_normalization --config configs/grpo.yaml
+Fork updates: 8
+>>> d:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\.venv\Scripts\python.exe -m task3_grpo.continue_train --config configs/grpo.yaml --run-name norm_grpo --output outputs/task3_grpo/norm_grpo --updates 8 --loss-type grpo --per-seq-grad
+W1010 15:41:41.358000 9252 .venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+[norm_grpo] GRPO continuation (grpo): 8 updates x 1 prompt(s) x K=4, eps=0.2, beta_KL=0.1, cap 512 tokens, per-completion grad norms
+[norm_grpo] update 1/8 reward=+1.709 grp_std=0.123 zero_std=0.00 kl_tok=+0.0001 loss=+0.0000 |g|=0.439 len=86 trunc=0.00 t=8s eta=0.9min
+[norm_grpo] update 2/8 reward=+2.806 grp_std=0.549 zero_std=0.00 kl_tok=-0.0001 loss=+0.0000 |g|=0.907 len=22 trunc=0.00 t=10s eta=0.5min
+[norm_grpo] update 3/8 reward=-0.593 grp_std=0.195 zero_std=0.00 kl_tok=-0.0007 loss=+0.0000 |g|=0.702 len=29 trunc=0.00 t=12s eta=0.3min
+[norm_grpo] update 4/8 reward=+2.303 grp_std=0.125 zero_std=0.00 kl_tok=-0.0000 loss=+0.0000 |g|=0.156 len=260 trunc=0.00 t=28s eta=0.5min
+[norm_grpo] update 5/8 reward=+0.216 grp_std=1.003 zero_std=0.00 kl_tok=+0.0002 loss=-0.3827 |g|=0.118 len=491 trunc=0.75 t=53s eta=0.5min
+[norm_grpo] update 6/8 reward=+2.892 grp_std=0.547 zero_std=0.00 kl_tok=+0.0001 loss=-0.4893 |g|=0.136 len=484 trunc=0.50 t=78s eta=0.4min
+[norm_grpo] update 7/8 reward=+1.004 grp_std=2.499 zero_std=0.00 kl_tok=+0.0001 loss=+0.4306 |g|=0.784 len=392 trunc=0.75 t=101s eta=0.2min
+[norm_grpo] update 8/8 reward=+1.105 grp_std=0.102 zero_std=0.00 kl_tok=-0.0005 loss=+0.0000 |g|=3.156 len=10 trunc=0.00 t=103s eta=0.0min
+[norm_grpo] saved adapter to D:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\outputs\task3_grpo\norm_grpo (1.7 min, peak VRAM 7.136 GiB)
+>>> d:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\.venv\Scripts\python.exe -m task3_grpo.evaluate --config configs/grpo.yaml --adapter outputs/task3_grpo/norm_grpo --name norm_grpo
+W1010 15:43:46.611000 34048 .venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+[eval:norm_grpo] held-out evaluation: 96 prompts (15 skipped as longer than 256 tokens), cap 768 tokens, adapter=outputs/task3_grpo/norm_grpo
+[eval:norm_grpo] generation batch 1/3 (8s elapsed)
+[eval:norm_grpo] generation batch 2/3 (61s elapsed)
+[eval:norm_grpo] generation batch 3/3 (116s elapsed)
+[eval:norm_grpo] scoring 96 responses with the reward model
+[eval:norm_grpo] reward=1.785 (with EOS penalty 1.785) kl_tok=0.0000 entropy=0.942 len=302.0 trunc=0.10 (3.2 min)
+>>> d:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\.venv\Scripts\python.exe -m task3_grpo.continue_train --config configs/grpo.yaml --run-name norm_dr_grpo --output outputs/task3_grpo/norm_dr_grpo --updates 8 --loss-type dr_grpo --per-seq-grad
+W1010 15:47:08.208000 33244 .venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+[norm_dr_grpo] GRPO continuation (dr_grpo): 8 updates x 1 prompt(s) x K=4, eps=0.2, beta_KL=0.1, cap 512 tokens, per-completion grad norms
+[norm_dr_grpo] update 1/8 reward=+1.709 grp_std=0.123 zero_std=0.00 kl_tok=+0.0001 loss=-0.0018 |g|=0.056 len=86 trunc=0.00 t=9s eta=1.0min
+[norm_dr_grpo] update 2/8 reward=+2.806 grp_std=0.549 zero_std=0.00 kl_tok=-0.0010 loss=+0.0020 |g|=0.036 len=22 trunc=0.00 t=11s eta=0.5min
+[norm_dr_grpo] update 3/8 reward=-0.593 grp_std=0.195 zero_std=0.00 kl_tok=-0.0002 loss=-0.0068 |g|=0.034 len=29 trunc=0.00 t=13s eta=0.4min
+[norm_dr_grpo] update 4/8 reward=+2.346 grp_std=0.237 zero_std=0.00 kl_tok=+0.0000 loss=-0.0122 |g|=0.079 len=238 trunc=0.00 t=29s eta=0.5min
+[norm_dr_grpo] update 5/8 reward=+0.842 grp_std=0.878 zero_std=0.00 kl_tok=+0.0002 loss=-0.3412 |g|=0.087 len=480 trunc=0.25 t=58s eta=0.6min
+[norm_dr_grpo] update 6/8 reward=+2.875 grp_std=0.688 zero_std=0.00 kl_tok=+0.0002 loss=-0.4287 |g|=0.117 len=485 trunc=0.50 t=86s eta=0.5min
+[norm_dr_grpo] update 7/8 reward=+1.089 grp_std=2.663 zero_std=0.00 kl_tok=-0.0002 loss=-0.1277 |g|=0.065 len=374 trunc=0.50 t=114s eta=0.3min
+[norm_dr_grpo] update 8/8 reward=+1.105 grp_std=0.102 zero_std=0.00 kl_tok=+0.0004 loss=-0.0006 |g|=0.069 len=10 trunc=0.00 t=116s eta=0.0min
+[norm_dr_grpo] saved adapter to D:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\outputs\task3_grpo\norm_dr_grpo (1.9 min, peak VRAM 7.136 GiB)
+>>> d:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\.venv\Scripts\python.exe -m task3_grpo.evaluate --config configs/grpo.yaml --adapter outputs/task3_grpo/norm_dr_grpo --name norm_dr_grpo
+W1010 15:49:29.196000 28408 .venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+[eval:norm_dr_grpo] held-out evaluation: 96 prompts (15 skipped as longer than 256 tokens), cap 768 tokens, adapter=outputs/task3_grpo/norm_dr_grpo
+[eval:norm_dr_grpo] generation batch 1/3 (11s elapsed)
+[eval:norm_dr_grpo] generation batch 2/3 (65s elapsed)
+[eval:norm_dr_grpo] generation batch 3/3 (122s elapsed)
+[eval:norm_dr_grpo] scoring 96 responses with the reward model
+[eval:norm_dr_grpo] reward=1.738 (with EOS penalty 1.738) kl_tok=0.0001 entropy=0.946 len=300.9 trunc=0.10 (3.3 min)
+wrote D:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\results\task3_grpo\summary_normalization.csv
+wrote D:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\results\task3_grpo\normalization_length_bins.csv

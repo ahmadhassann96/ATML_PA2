@@ -1,0 +1,7 @@
+{
+  "run_name": "standard",
+  "updates": 91,
+  "wall_clock_s": 1017.8,
+  "peak_vram_gib": 5.633,
+  "adapter": "D:\\Junior\\CS6304 - ATML\\PA2\\ATML-PA2-LLM-PostTraining\\outputs\\task1_dpo\\standard"
+}

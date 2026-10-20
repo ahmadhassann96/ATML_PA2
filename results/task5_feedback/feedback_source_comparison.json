@@ -1,0 +1,391 @@
+{
+  "missing_inputs": [],
+  "transfer": [
+    {
+      "policy": "sft",
+      "accuracy_in_domain": 0.2767,
+      "accuracy_transfer": 0.44,
+      "accuracy_drop": -0.1633,
+      "format_in_domain": 0.35,
+      "format_transfer": 0.57,
+      "tokens_in_domain": 274.1467,
+      "tokens_transfer": 165.12,
+      "tokens_change": -109.0267,
+      "accuracy_gain_over_sft_in_domain": NaN,
+      "accuracy_gain_over_sft_transfer": NaN,
+      "win_rate_in_domain": NaN,
+      "win_rate_transfer": NaN,
+      "win_rate_drop": NaN
+    },
+    {
+      "policy": "rlvr",
+      "accuracy_in_domain": 0.3033,
+      "accuracy_transfer": 0.45,
+      "accuracy_drop": -0.1467,
+      "format_in_domain": 0.38,
+      "format_transfer": 0.57,
+      "tokens_in_domain": 274.3233,
+      "tokens_transfer": 164.38,
+      "tokens_change": -109.9433,
+      "accuracy_gain_over_sft_in_domain": 0.0267,
+      "accuracy_gain_over_sft_transfer": 0.01,
+      "win_rate_in_domain": 0.5033,
+      "win_rate_transfer": 0.51,
+      "win_rate_drop": -0.0067
+    },
+    {
+      "policy": "rlaif",
+      "accuracy_in_domain": 0.28,
+      "accuracy_transfer": 0.44,
+      "accuracy_drop": -0.16,
+      "format_in_domain": 0.3467,
+      "format_transfer": 0.57,
+      "tokens_in_domain": 274.78,
+      "tokens_transfer": 163.84,
+      "tokens_change": -110.94,
+      "accuracy_gain_over_sft_in_domain": 0.0033,
+      "accuracy_gain_over_sft_transfer": 0.0,
+      "win_rate_in_domain": 0.4983,
+      "win_rate_transfer": 0.5,
+      "win_rate_drop": -0.0017
+    }
+  ],
+  "policies": [
+    {
+      "dataset": "gsm",
+      "policy": "sft",
+      "n": 300,
+      "exact_accuracy": 0.2767,
+      "exact_accuracy_lo": 0.2267,
+      "exact_accuracy_hi": 0.33,
+      "format_compliance": 0.35,
+      "response_tokens_mean": 274.1467,
+      "response_tokens_median": 261.0,
+      "truncation_rate": 0.0233,
+      "win_rate_vs_sft": NaN,
+      "win_rate_lo": NaN,
+      "win_rate_hi": NaN,
+      "wins": NaN,
+      "losses": NaN,
+      "judge_ties": NaN,
+      "identical_to_sft": NaN,
+      "verifier_decisive_pairs": NaN,
+      "verifier_judge_agreement": NaN,
+      "judge_prefers_verified_wrong": NaN,
+      "judge_tie_rate_when_verifier_ties": NaN
+    },
+    {
+      "dataset": "gsm",
+      "policy": "rlvr",
+      "n": 300,
+      "exact_accuracy": 0.3033,
+      "exact_accuracy_lo": 0.25,
+      "exact_accuracy_hi": 0.3501,
+      "format_compliance": 0.38,
+      "response_tokens_mean": 274.3233,
+      "response_tokens_median": 258.5,
+      "truncation_rate": 0.02,
+      "win_rate_vs_sft": 0.5033,
+      "win_rate_lo": 0.495,
+      "win_rate_hi": 0.5117,
+      "wins": 4.0,
+      "losses": 2.0,
+      "judge_ties": 48.0,
+      "identical_to_sft": 246.0,
+      "verifier_decisive_pairs": 10.0,
+      "verifier_judge_agreement": 0.0,
+      "judge_prefers_verified_wrong": 2.0,
+      "judge_tie_rate_when_verifier_ties": 0.9091
+    },
+    {
+      "dataset": "gsm",
+      "policy": "rlaif",
+      "n": 300,
+      "exact_accuracy": 0.28,
+      "exact_accuracy_lo": 0.23,
+      "exact_accuracy_hi": 0.33,
+      "format_compliance": 0.3467,
+      "response_tokens_mean": 274.78,
+      "response_tokens_median": 261.0,
+      "truncation_rate": 0.02,
+      "win_rate_vs_sft": 0.4983,
+      "win_rate_lo": 0.49,
+      "win_rate_hi": 0.505,
+      "wins": 2.0,
+      "losses": 3.0,
+      "judge_ties": 48.0,
+      "identical_to_sft": 247.0,
+      "verifier_decisive_pairs": 9.0,
+      "verifier_judge_agreement": 0.2222,
+      "judge_prefers_verified_wrong": 0.0,
+      "judge_tie_rate_when_verifier_ties": 0.9318
+    },
+    {
+      "dataset": "transfer",
+      "policy": "sft",
+      "n": 100,
+      "exact_accuracy": 0.44,
+      "exact_accuracy_lo": 0.34,
+      "exact_accuracy_hi": 0.53,
+      "format_compliance": 0.57,
+      "response_tokens_mean": 165.12,
+      "response_tokens_median": 143.0,
+      "truncation_rate": 0.0,
+      "win_rate_vs_sft": NaN,
+      "win_rate_lo": NaN,
+      "win_rate_hi": NaN,
+      "wins": NaN,
+      "losses": NaN,
+      "judge_ties": NaN,
+      "identical_to_sft": NaN,
+      "verifier_decisive_pairs": NaN,
+      "verifier_judge_agreement": NaN,
+      "judge_prefers_verified_wrong": NaN,
+      "judge_tie_rate_when_verifier_ties": NaN
+    },
+    {
+      "dataset": "transfer",
+      "policy": "rlvr",
+      "n": 100,
+      "exact_accuracy": 0.45,
+      "exact_accuracy_lo": 0.35,
+      "exact_accuracy_hi": 0.55,
+      "format_compliance": 0.57,
+      "response_tokens_mean": 164.38,
+      "response_tokens_median": 140.0,
+      "truncation_rate": 0.0,
+      "win_rate_vs_sft": 0.51,
+      "win_rate_lo": 0.495,
+      "win_rate_hi": 0.53,
+      "wins": 3.0,
+      "losses": 1.0,
+      "judge_ties": 8.0,
+      "identical_to_sft": 88.0,
+      "verifier_decisive_pairs": 5.0,
+      "verifier_judge_agreement": 0.6,
+      "judge_prefers_verified_wrong": 0.0,
+      "judge_tie_rate_when_verifier_ties": 0.8571
+    },
+    {
+      "dataset": "transfer",
+      "policy": "rlaif",
+      "n": 100,
+      "exact_accuracy": 0.44,
+      "exact_accuracy_lo": 0.34,
+      "exact_accuracy_hi": 0.53,
+      "format_compliance": 0.57,
+      "response_tokens_mean": 163.84,
+      "response_tokens_median": 143.0,
+      "truncation_rate": 0.0,
+      "win_rate_vs_sft": 0.5,
+      "win_rate_lo": 0.5,
+      "win_rate_hi": 0.5,
+      "wins": 0.0,
+      "losses": 0.0,
+      "judge_ties": 7.0,
+      "identical_to_sft": 93.0,
+      "verifier_decisive_pairs": 2.0,
+      "verifier_judge_agreement": 0.0,
+      "judge_prefers_verified_wrong": 0.0,
+      "judge_tie_rate_when_verifier_ties": 1.0
+    }
+  ],
+  "transfer_accuracy_by_svamp_type": {
+    "sft": {
+      "Addition": 0.25,
+      "Common-Division": 0.5,
+      "Multiplication": 0.1111111111111111,
+      "Subtraction": 0.543859649122807
+    },
+    "rlvr": {
+      "Addition": 0.25,
+      "Common-Division": 0.42857142857142855,
+      "Multiplication": 0.2222222222222222,
+      "Subtraction": 0.5614035087719298
+    },
+    "rlaif": {
+      "Addition": 0.25,
+      "Common-Division": 0.5,
+      "Multiplication": 0.1111111111111111,
+      "Subtraction": 0.543859649122807
+    }
+  },
+  "S_reason": {
+    "rlvr": 0.0,
+    "rlaif_pairwise": 0.0,
+    "rlaif_group": 0.1
+  },
+  "S_outcome": {
+    "rlvr": 1.0,
+    "rlaif_pairwise": 0.0,
+    "rlaif_group": 0.3
+  },
+  "S_outcome_all_outcome_changing_pairs": {
+    "rlvr": 1.0,
+    "rlaif_pairwise": 0.13333333333333333,
+    "rlaif_group": 0.4166666666666667
+  },
+  "coverage": {
+    "diagnostic_pairs_decisive_share": {
+      "rlvr": 0.5,
+      "rlaif_pairwise": 0.1375,
+      "rlaif_group": 0.425
+    },
+    "diagnostic_decisive_share_by_category": {
+      "reasoning": {
+        "rlvr": 0.0,
+        "rlaif_pairwise": 0.0,
+        "rlaif_group": 0.25
+      },
+      "outcome": {
+        "rlvr": 1.0,
+        "rlaif_pairwise": 0.0,
+        "rlaif_group": 0.45
+      },
+      "filler": {
+        "rlvr": 0.0,
+        "rlaif_pairwise": 0.25,
+        "rlaif_group": 0.5
+      },
+      "distractor": {
+        "rlvr": 1.0,
+        "rlaif_pairwise": 0.3,
+        "rlaif_group": 0.5
+      }
+    },
+    "gsm_policy_vs_sft": {
+      "rlvr": {
+        "n_nonidentical_pairs": 54,
+        "verifier_decisive": 0.18518518518518517,
+        "judge_decisive": 0.1111111111111111
+      },
+      "rlaif": {
+        "n_nonidentical_pairs": 53,
+        "verifier_decisive": 0.16981132075471697,
+        "judge_decisive": 0.09433962264150944
+      }
+    },
+    "transfer_policy_vs_sft": {
+      "rlvr": {
+        "n_nonidentical_pairs": 12,
+        "verifier_decisive": 0.4166666666666667,
+        "judge_decisive": 0.3333333333333333
+      },
+      "rlaif": {
+        "n_nonidentical_pairs": 7,
+        "verifier_decisive": 0.2857142857142857,
+        "judge_decisive": 0.0
+      }
+    }
+  },
+  "noise": {
+    "judge_order_check": {
+      "pairs_with_opposite_physical_order": 42,
+      "position_consistency": 0.8095238095238095,
+      "consistency_by_category": {
+        "distractor": 0.45454545454545453,
+        "filler": 1.0,
+        "outcome": 0.8571428571428571,
+        "reasoning": 1.0
+      }
+    },
+    "judge_position": {
+      "n_calls": 280,
+      "raw_first_position_pick_rate": 0.04285714285714286,
+      "raw_second_position_pick_rate": 0.09642857142857143,
+      "tie_rate": 0.8607142857142858
+    },
+    "verifier_expected_mismatches": 0,
+    "gsm_verifier_judge_agreement_on_decisive": {
+      "rlvr": 0.0,
+      "rlaif": 0.2222222222222222
+    },
+    "gsm_judge_tie_rate_when_verifier_ties": {
+      "rlvr": 0.9090909090909091,
+      "rlaif": 0.9318181818181818
+    },
+    "transfer_verifier_judge_agreement_on_decisive": {
+      "rlvr": 0.6,
+      "rlaif": 0.0
+    },
+    "transfer_judge_tie_rate_when_verifier_ties": {
+      "rlvr": 0.8571428571428571,
+      "rlaif": 1.0
+    }
+  },
+  "exploitability": {
+    "filler_wrong_rate": {
+      "rlvr": 0.0,
+      "rlaif_pairwise": 0.25,
+      "rlaif_group": 0.4
+    },
+    "filler_better_rate": {
+      "rlvr": 0.0,
+      "rlaif_pairwise": 0.0,
+      "rlaif_group": 0.1
+    },
+    "distractor_wrong_or_tie_rate": {
+      "rlvr": 0.0,
+      "rlaif_pairwise": 0.75,
+      "rlaif_group": 0.6
+    },
+    "reasoning_corruption_undetected_rate": {
+      "rlvr": 1.0,
+      "rlaif_pairwise": 1.0,
+      "rlaif_group": 0.9
+    },
+    "gsm_judge_prefers_verified_wrong": {
+      "rlvr": 2,
+      "rlaif": 0
+    },
+    "transfer_judge_prefers_verified_wrong": {
+      "rlvr": 0,
+      "rlaif": 0
+    }
+  },
+  "cost": {
+    "diagnostics": {
+      "verifier_calls": 100,
+      "verifier_seconds_total": 0.00016179999511223286,
+      "verifier_seconds_per_call": 1.6179999511223286e-06,
+      "judge_calls_total": 280,
+      "judge_calls_uncached_this_run": 280,
+      "judge_seconds_this_run": 67.9,
+      "judge_seconds_per_uncached_call": 0.243,
+      "judge_model": "Qwen/Qwen2.5-3B-Instruct"
+    },
+    "gsm_judge": {
+      "rlvr": {
+        "judge_calls_uncached": 54,
+        "judge_seconds": 19.7,
+        "seconds_per_uncached_call": 0.365
+      },
+      "rlaif": {
+        "judge_calls_uncached": 38,
+        "judge_seconds": 13.6,
+        "seconds_per_uncached_call": 0.358
+      }
+    },
+    "transfer_judge": {
+      "rlvr": {
+        "judge_calls_uncached": 12,
+        "judge_seconds": 3.5,
+        "seconds_per_uncached_call": 0.291
+      },
+      "rlaif": {
+        "judge_calls_uncached": 4,
+        "judge_seconds": 1.0,
+        "seconds_per_uncached_call": 0.26
+      }
+    },
+    "per_training_group_estimate": {
+      "K": 4,
+      "verifier_calls": 4,
+      "judge_calls": 6,
+      "judge_seconds_per_call_median": 0.291,
+      "judge_seconds_per_group": 1.75,
+      "verifier_seconds_per_group": 6.471999804489315e-06,
+      "note": "measured in this run with greedy 4-bit judge decoding (one forward pass per call); the judge also needs its own weights in memory (Qwen2.5-3B in 4-bit)"
+    }
+  }
+}

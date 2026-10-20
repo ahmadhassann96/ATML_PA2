@@ -27,10 +27,13 @@ def dpo_loss(
         - ref_rejected_logp
     )
 
-    # Starter implementation:
-    # students must validate the objective carefully.
+    # FIX: the DPO logit is beta * [(log pi_theta(y+) - log pi_ref(y+)) - (log pi_theta(y-) - log pi_ref(y-))]
+    #    = beta * (policy_margin - ref_margin).
+    # The starter used "+ ref_margin", which rewards the policy for agreeing with the reference
+    # instead of measuring improvement relative to it (and at init, where policy == reference,
+    # gives a non-zero logit 2*beta*ref_margin instead of 0, i.e. loss != log 2).
     logits = beta * (
-        policy_margin + ref_margin
+        policy_margin - ref_margin
     )
 
     loss = -F.logsigmoid(

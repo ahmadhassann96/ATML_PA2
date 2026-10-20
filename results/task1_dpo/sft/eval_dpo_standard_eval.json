@@ -1,0 +1,94 @@
+{
+  "name": "sft",
+  "adapter": null,
+  "eval_file": "data/dpo_standard_eval.jsonl",
+  "seed": 6304,
+  "generation": {
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "do_sample": true,
+    "max_new_tokens": 256
+  },
+  "pairs": {
+    "beta_for_loss": 0.1,
+    "n_dropped_long_prompts": 10,
+    "overall": {
+      "n_pairs": 290,
+      "dpo_loss": 0.6931471824645996,
+      "preference_accuracy": 0.0,
+      "preference_accuracy_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_margin": 0.0,
+      "policy_logp_prefers_chosen": 0.496551724137931,
+      "ref_logp_prefers_chosen": 0.496551724137931,
+      "chosen_longer_frac": 0.503448275862069
+    }
+  },
+  "generation_metrics": {
+    "n_responses": 272,
+    "kl_token_mean": 0.0,
+    "kl_seq_mean": 0.0,
+    "reward_mean": 1.2783651912913603,
+    "reward_std": 1.2255273543176726,
+    "reward_ci95": [
+      1.1371614245807424,
+      1.4203188826056086
+    ],
+    "entropy_mean": 0.874436604537015,
+    "response_tokens": {
+      "mean": 158.3860294117647,
+      "std": 105.22137844227879,
+      "median": 232.0,
+      "q25": 39.75,
+      "q75": 256.0,
+      "iqr": 216.25,
+      "max": 256.0,
+      "n": 272
+    },
+    "response_words": {
+      "mean": 113.88602941176471,
+      "std": 77.82497016570744,
+      "median": 132.5,
+      "q25": 30.0,
+      "q75": 186.0,
+      "iqr": 156.0,
+      "max": 237.0,
+      "n": 272
+    },
+    "truncation_rate": 0.4632352941176471,
+    "n_prompts_skipped_long": 28
+  },
+  "word_limit": {
+    "n_prompts": 10,
+    "samples_per_prompt": 5,
+    "compliance_rate": 0.62,
+    "compliance_ci95": [
+      0.48,
+      0.74
+    ],
+    "words_over_limit_mean": 5.88,
+    "response_words": {
+      "mean": 37.18,
+      "std": 16.214425675922044,
+      "median": 31.0,
+      "q25": 25.0,
+      "q75": 45.75,
+      "iqr": 20.75,
+      "max": 82.0,
+      "n": 50
+    },
+    "response_tokens": {
+      "mean": 44.48,
+      "std": 18.98551026440954,
+      "median": 37.0,
+      "q25": 30.0,
+      "q75": 54.5,
+      "iqr": 24.5,
+      "max": 103.0,
+      "n": 50
+    }
+  },
+  "wall_clock_s": 385.8
+}

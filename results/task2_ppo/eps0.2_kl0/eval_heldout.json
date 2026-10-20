@@ -1,0 +1,45 @@
+{
+  "name": "eps0.2_kl0",
+  "adapter": "outputs/task2_ppo/eps0.2_kl0",
+  "n_prompts": 96,
+  "n_prompts_skipped_long": 15,
+  "max_new_tokens": 768,
+  "seed": 6304,
+  "generation": {
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "do_sample": true
+  },
+  "reward_raw_mean": 1.8674519856770833,
+  "reward_raw_std": 1.3439590130368362,
+  "reward_raw_ci95": [
+    1.573029104868571,
+    2.133275063832601
+  ],
+  "reward_mean": 1.8049519856770833,
+  "reward_ci95": [
+    1.5076529184977214,
+    2.0804093360900877
+  ],
+  "missing_eos_penalty": 1.0,
+  "kl_token_mean": 1.562652723564242e-05,
+  "kl_seq_mean": 0.004540645596231722,
+  "kl_seq_ci95": [
+    -0.009674812302000645,
+    0.019038207825178677
+  ],
+  "entropy_mean": 0.9394260485035678,
+  "response_tokens": {
+    "mean": 290.5729166666667,
+    "std": 254.22360338193042,
+    "median": 212.5,
+    "q25": 61.25,
+    "q75": 493.75,
+    "iqr": 432.5,
+    "max": 768.0,
+    "n": 96
+  },
+  "truncation_rate": 0.0625,
+  "eos_rate": 0.9375,
+  "wall_clock_s": 208.2
+}

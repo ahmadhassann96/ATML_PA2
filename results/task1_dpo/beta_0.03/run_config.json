@@ -1,0 +1,50 @@
+{
+  "run_name": "beta_0.03",
+  "dataset": "data/dpo_standard_train.jsonl",
+  "n_train_pairs": 580,
+  "dropped_long_prompt_ids": [
+    "e14d5ba9f8d00a203e7cc3e044f3d3bc4ad429024898c59e0c6a1009e7fb1f18",
+    "6f58a8714956c4ece492f013f93cf719484852f1e355ede1b79f028807938111",
+    "fabe7f39d9890f3d945db8c8e1f787db76cfd9b4cbdfcbb796e5a1f9c601a0af",
+    "aa966c9d7b809f8f8e3c764ef0ad940564dc584114e6704032ee4f14c18ef6e7",
+    "f3d1abc1c0e79f0f3546b36f4c3fa8120c325521cbc9df0ce8b41a6928c0c72d",
+    "948459d65639035efa182add73e52307c4df90a887e9a9026a8aeef3794f2d07",
+    "74369a60a79703e9e0dced866e6683d01c3338103e40a00d6d9eb0cc49a40121",
+    "58bea0e9d4c1798ab8368e560e911941d6ab1ebcbebe6fd07288989c8dd7aa0e",
+    "8f1ec2cf1f76779c7ab4962998cf8792b50c6e93fe09b15eea7195ea13c0c803",
+    "f5d6669a7c077c4c7f49833ed50befc3490747825303722b7c809b71c6fb4652",
+    "e1dca4044ab27e45f64b5b58c6bfd84642f2dfe0c4f295fa9e7be195c437161d",
+    "e5774276d496b7f1cbed667c35a2af85f515fc702d2147dad7d84c448c41ec12",
+    "0fa6c81ef0c6275141c14569d677fc68111afc00b606873124271ac601d32f8b",
+    "18732a153d984c2e5a027e18fa1cbeb61b99a9fe6e8aa2ff0e940d2e5ea86a72",
+    "86a6ee192999e46ac0f041385e97cb8176b28e70e0e5b4a47b01d26fee682df8",
+    "d348ab35c2625f30ab9f5a2b850efe786e499adf6aa0db34016962a1462a79f2",
+    "85e0488323a28fca22a662a56ac4fa0056aaf6ed89051187ecaa9717e48b7cc6",
+    "2c0f592d7c48443fa4ca815c2a110177e107f37b7449112f980aa30c3a03b21c",
+    "82eeff0265dffcb6fb802f377911c568bc153001573dbcb7b8cffd867d947958",
+    "c45d3fc36d3c0ec001b926e5bf9a284f0befc9dc25cda0316cbc8771fa1d578b"
+  ],
+  "beta": 0.03,
+  "epochs": 1,
+  "batch_size": 2,
+  "grad_accum_steps": 8,
+  "effective_batch_pairs": 16,
+  "optimizer_updates": 37,
+  "learning_rate": 2e-05,
+  "lr_schedule": "constant",
+  "max_sequence_length": 768,
+  "max_grad_norm": 1.0,
+  "lora": {
+    "r": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ]
+  },
+  "seed": 6304,
+  "dtype": "float16",
+  "grad_scaler": true,
+  "output_adapter": "D:\\Junior\\CS6304 - ATML\\PA2\\ATML-PA2-LLM-PostTraining\\outputs\\task1_dpo\\beta_0.03"
+}

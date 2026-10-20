@@ -1,0 +1,4 @@
+$ d:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\.venv\Scripts\python.exe -u -m task4_safety.make_audit_sheet --config configs/feedback.yaml
+Wrote fixed audit IDs: D:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\results\task4_safety\manual_audit_ids.csv
+Blinded labelling sheet: D:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\results\task4_safety\manual_audit_sheet.csv (115 distinct responses for 60 prompts x 4 policies; 0 already labelled)
+Label without viewing AI labels first. Policy/class/AI label are deliberately not in the sheet.

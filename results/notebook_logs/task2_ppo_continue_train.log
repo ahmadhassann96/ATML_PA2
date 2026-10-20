@@ -1,0 +1,24 @@
+$ d:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\.venv\Scripts\python.exe -u -m task2_ppo.continue_train --config configs/ppo.yaml --run-name standard
+W1010 02:25:14.247000 5364 .venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+[standard] PPO continuation: 20 updates x 1 prompt(s), 2 epochs/update, eps=0.2, beta_KL=0.1, cap 512 tokens
+[standard] update 1/20 reward=+1.578 kl_tok=-0.0004 pol_loss=-0.0005 v_loss=7.654 clip=0.000 len=60 |g|=0.964 t=5s eta=1.5min
+[standard] update 2/20 reward=+3.029 kl_tok=+0.0015 pol_loss=+0.0008 v_loss=19.358 clip=0.000 len=19 |g|=0.946 t=7s eta=1.0min
+[standard] update 3/20 reward=+0.265 kl_tok=+0.0018 pol_loss=-0.0004 v_loss=2.857 clip=0.000 len=36 |g|=0.770 t=9s eta=0.9min
+[standard] update 4/20 reward=+2.150 kl_tok=+0.0002 pol_loss=+0.0001 v_loss=3.809 clip=0.000 len=213 |g|=0.275 t=18s eta=1.2min
+[standard] update 5/20 reward=-0.572 kl_tok=+0.0003 pol_loss=+0.0000 v_loss=4.972 clip=0.000 len=512 |g|=0.194 t=38s eta=1.9min
+[standard] update 6/20 reward=+3.420 kl_tok=+0.0003 pol_loss=-0.0001 v_loss=5.771 clip=0.000 len=512 |g|=0.195 t=60s eta=2.3min
+[standard] update 7/20 reward=+1.494 kl_tok=-0.0005 pol_loss=+0.0001 v_loss=3.905 clip=0.000 len=512 |g|=0.242 t=81s eta=2.5min
+[standard] update 8/20 reward=+1.227 kl_tok=+0.0015 pol_loss=+0.0006 v_loss=10.157 clip=0.000 len=13 |g|=2.767 t=82s eta=2.1min
+[standard] update 9/20 reward=+2.783 kl_tok=-0.0002 pol_loss=+0.0001 v_loss=3.382 clip=0.000 len=362 |g|=0.317 t=96s eta=2.0min
+[standard] update 10/20 reward=+1.758 kl_tok=+0.0002 pol_loss=+0.0001 v_loss=2.693 clip=0.000 len=243 |g|=0.309 t=105s eta=1.8min
+[standard] update 11/20 reward=+1.483 kl_tok=+0.0005 pol_loss=-0.0000 v_loss=3.095 clip=0.000 len=145 |g|=0.362 t=111s eta=1.5min
+[standard] update 12/20 reward=+1.954 kl_tok=+0.0003 pol_loss=+0.0001 v_loss=2.616 clip=0.000 len=197 |g|=0.418 t=119s eta=1.3min
+[standard] update 13/20 reward=+2.035 kl_tok=-0.0001 pol_loss=-0.0000 v_loss=2.317 clip=0.000 len=467 |g|=0.236 t=137s eta=1.2min
+[standard] update 14/20 reward=+3.432 kl_tok=-0.0011 pol_loss=-0.0011 v_loss=3.116 clip=0.000 len=44 |g|=1.102 t=139s eta=1.0min
+[standard] update 15/20 reward=+1.443 kl_tok=+0.0002 pol_loss=+0.0000 v_loss=5.417 clip=0.000 len=512 |g|=0.225 t=159s eta=0.9min
+[standard] update 16/20 reward=-1.020 kl_tok=-0.0015 pol_loss=-0.0000 v_loss=4.924 clip=0.000 len=31 |g|=0.621 t=161s eta=0.7min
+[standard] update 17/20 reward=+2.361 kl_tok=+0.0005 pol_loss=-0.0001 v_loss=2.015 clip=0.000 len=238 |g|=0.248 t=171s eta=0.5min
+[standard] update 18/20 reward=+0.349 kl_tok=+0.0008 pol_loss=-0.0001 v_loss=3.093 clip=0.000 len=65 |g|=0.805 t=174s eta=0.3min
+[standard] update 19/20 reward=-0.151 kl_tok=+0.0005 pol_loss=-0.0006 v_loss=7.238 clip=0.000 len=61 |g|=1.003 t=177s eta=0.2min
+[standard] update 20/20 reward=+1.592 kl_tok=-0.0002 pol_loss=-0.0000 v_loss=3.187 clip=0.000 len=88 |g|=0.448 t=181s eta=0.0min
+[standard] saved policy adapter to D:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\outputs\task2_ppo\standard (3.0 min, peak VRAM 6.921 GiB)

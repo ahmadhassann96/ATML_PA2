@@ -1,0 +1,8 @@
+{
+  "run_name": "eps0.05_kl0.1",
+  "updates": 8,
+  "generated_tokens": 1877,
+  "wall_clock_s": 107.5,
+  "peak_vram_gib": 6.875,
+  "adapter": "D:\\Junior\\CS6304 - ATML\\PA2\\ATML-PA2-LLM-PostTraining\\outputs\\task2_ppo\\eps0.05_kl0.1"
+}

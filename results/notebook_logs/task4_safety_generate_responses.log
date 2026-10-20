@@ -1,0 +1,7 @@
+$ d:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\.venv\Scripts\python.exe -u -m task4_safety.generate_responses --config configs/feedback.yaml
+Policies: ['sft', 'dpo', 'ppo', 'grpo']
+XSTest rows: 450
+sft: D:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\results\task4_safety\generated_sft.jsonl exists - skipping
+dpo: D:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\results\task4_safety\generated_dpo.jsonl exists - skipping
+ppo: D:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\results\task4_safety\generated_ppo.jsonl exists - skipping
+grpo: D:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\results\task4_safety\generated_grpo.jsonl exists - skipping

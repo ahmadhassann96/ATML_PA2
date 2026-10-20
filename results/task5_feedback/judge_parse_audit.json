@@ -1,0 +1,141 @@
+{
+  "overall": {
+    "n": 129,
+    "decisions": {
+      "TIE": 112,
+      "A": 9,
+      "B": 8
+    },
+    "tie_rate": 0.8682170542635659,
+    "ties_explicit": 112,
+    "ties_parse_fallback": 0,
+    "fallbacks_resolved_with_48_tokens": {},
+    "raw_4tok_first_words": {
+      "TIE": 112,
+      "B": 8,
+      "A,": 7,
+      "A": 2
+    }
+  },
+  "by_source": {
+    "diagnostic:distractor": {
+      "n": 20,
+      "decisions": {
+        "TIE": 14,
+        "A": 5,
+        "B": 1
+      },
+      "tie_rate": 0.7,
+      "ties_explicit": 14,
+      "ties_parse_fallback": 0,
+      "fallbacks_resolved_with_48_tokens": {},
+      "raw_4tok_first_words": {
+        "TIE": 14,
+        "B": 6
+      }
+    },
+    "diagnostic:filler": {
+      "n": 20,
+      "decisions": {
+        "TIE": 15,
+        "B": 5
+      },
+      "tie_rate": 0.75,
+      "ties_explicit": 15,
+      "ties_parse_fallback": 0,
+      "fallbacks_resolved_with_48_tokens": {},
+      "raw_4tok_first_words": {
+        "TIE": 15,
+        "A,": 4,
+        "B": 1
+      }
+    },
+    "diagnostic:outcome": {
+      "n": 20,
+      "decisions": {
+        "TIE": 20
+      },
+      "tie_rate": 1.0,
+      "ties_explicit": 20,
+      "ties_parse_fallback": 0,
+      "fallbacks_resolved_with_48_tokens": {},
+      "raw_4tok_first_words": {
+        "TIE": 20
+      }
+    },
+    "diagnostic:reasoning": {
+      "n": 20,
+      "decisions": {
+        "TIE": 20
+      },
+      "tie_rate": 1.0,
+      "ties_explicit": 20,
+      "ties_parse_fallback": 0,
+      "fallbacks_resolved_with_48_tokens": {},
+      "raw_4tok_first_words": {
+        "TIE": 20
+      }
+    },
+    "gsm:rlaif_vs_sft": {
+      "n": 15,
+      "decisions": {
+        "TIE": 15
+      },
+      "tie_rate": 1.0,
+      "ties_explicit": 15,
+      "ties_parse_fallback": 0,
+      "fallbacks_resolved_with_48_tokens": {},
+      "raw_4tok_first_words": {
+        "TIE": 15
+      }
+    },
+    "gsm:rlvr_vs_sft": {
+      "n": 15,
+      "decisions": {
+        "TIE": 13,
+        "A": 1,
+        "B": 1
+      },
+      "tie_rate": 0.8666666666666667,
+      "ties_explicit": 13,
+      "ties_parse_fallback": 0,
+      "fallbacks_resolved_with_48_tokens": {},
+      "raw_4tok_first_words": {
+        "TIE": 13,
+        "B": 1,
+        "A": 1
+      }
+    },
+    "transfer:rlaif_vs_sft": {
+      "n": 7,
+      "decisions": {
+        "TIE": 7
+      },
+      "tie_rate": 1.0,
+      "ties_explicit": 7,
+      "ties_parse_fallback": 0,
+      "fallbacks_resolved_with_48_tokens": {},
+      "raw_4tok_first_words": {
+        "TIE": 7
+      }
+    },
+    "transfer:rlvr_vs_sft": {
+      "n": 12,
+      "decisions": {
+        "A": 3,
+        "TIE": 8,
+        "B": 1
+      },
+      "tie_rate": 0.6666666666666666,
+      "ties_explicit": 8,
+      "ties_parse_fallback": 0,
+      "fallbacks_resolved_with_48_tokens": {},
+      "raw_4tok_first_words": {
+        "TIE": 8,
+        "A,": 3,
+        "A": 1
+      }
+    }
+  },
+  "reproduces_cache_rate": 1.0
+}

@@ -1,0 +1,24 @@
+$ d:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\.venv\Scripts\python.exe -u -m task3_grpo.continue_train --config configs/grpo.yaml --run-name standard
+W1010 15:29:42.353000 21024 .venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+[standard] GRPO continuation (grpo): 20 updates x 1 prompt(s) x K=4, eps=0.2, beta_KL=0.1, cap 512 tokens
+[standard] update 1/20 reward=+1.709 grp_std=0.123 zero_std=0.00 kl_tok=+0.0001 loss=+0.0000 |g|=0.439 len=86 trunc=0.00 t=8s eta=2.7min
+[standard] update 2/20 reward=+2.806 grp_std=0.549 zero_std=0.00 kl_tok=+0.0004 loss=+0.0000 |g|=0.907 len=22 trunc=0.00 t=10s eta=1.5min
+[standard] update 3/20 reward=-0.593 grp_std=0.195 zero_std=0.00 kl_tok=-0.0002 loss=+0.0000 |g|=0.702 len=29 trunc=0.00 t=12s eta=1.1min
+[standard] update 4/20 reward=+2.389 grp_std=0.138 zero_std=0.00 kl_tok=+0.0001 loss=+0.0000 |g|=0.156 len=244 trunc=0.00 t=23s eta=1.5min
+[standard] update 5/20 reward=+1.103 grp_std=0.845 zero_std=0.00 kl_tok=+0.0000 loss=-0.4344 |g|=0.140 len=455 trunc=0.50 t=47s eta=2.4min
+[standard] update 6/20 reward=+1.908 grp_std=0.433 zero_std=0.00 kl_tok=+0.0003 loss=+0.0000 |g|=0.000 len=512 trunc=1.00 t=70s eta=2.7min
+[standard] update 7/20 reward=+2.642 grp_std=0.544 zero_std=0.00 kl_tok=+0.0002 loss=-0.3729 |g|=0.137 len=493 trunc=0.75 t=93s eta=2.9min
+[standard] update 8/20 reward=+1.175 grp_std=0.427 zero_std=0.00 kl_tok=-0.0020 loss=+0.0000 |g|=2.070 len=10 trunc=0.00 t=94s eta=2.4min
+[standard] update 9/20 reward=+2.679 grp_std=0.466 zero_std=0.00 kl_tok=+0.0001 loss=-0.4211 |g|=0.090 len=414 trunc=0.25 t=117s eta=2.4min
+[standard] update 10/20 reward=+2.426 grp_std=0.609 zero_std=0.00 kl_tok=+0.0002 loss=-0.4001 |g|=0.095 len=404 trunc=0.25 t=139s eta=2.3min
+[standard] update 11/20 reward=+1.646 grp_std=0.148 zero_std=0.00 kl_tok=+0.0002 loss=+0.0000 |g|=0.173 len=172 trunc=0.00 t=148s eta=2.0min
+[standard] update 12/20 reward=+2.077 grp_std=1.019 zero_std=0.00 kl_tok=+0.0002 loss=-0.4443 |g|=0.119 len=490 trunc=0.50 t=170s eta=1.9min
+[standard] update 13/20 reward=+1.887 grp_std=0.406 zero_std=0.00 kl_tok=+0.0001 loss=-0.4037 |g|=0.090 len=436 trunc=0.25 t=193s eta=1.7min
+[standard] update 14/20 reward=+3.039 grp_std=0.233 zero_std=0.00 kl_tok=-0.0001 loss=+0.0000 |g|=0.480 len=55 trunc=0.00 t=197s eta=1.4min
+[standard] update 15/20 reward=+0.895 grp_std=0.623 zero_std=0.00 kl_tok=+0.0000 loss=-0.3166 |g|=0.084 len=492 trunc=0.75 t=220s eta=1.2min
+[standard] update 16/20 reward=+0.930 grp_std=1.177 zero_std=0.00 kl_tok=+0.0001 loss=+0.0000 |g|=0.298 len=226 trunc=0.00 t=234s eta=1.0min
+[standard] update 17/20 reward=+1.924 grp_std=0.241 zero_std=0.00 kl_tok=+0.0003 loss=+0.0000 |g|=0.165 len=313 trunc=0.00 t=255s eta=0.7min
+[standard] update 18/20 reward=+0.771 grp_std=1.567 zero_std=0.00 kl_tok=+0.0005 loss=+0.0000 |g|=0.795 len=62 trunc=0.00 t=262s eta=0.5min
+[standard] update 19/20 reward=-0.798 grp_std=0.688 zero_std=0.00 kl_tok=-0.0005 loss=+0.0000 |g|=0.556 len=50 trunc=0.00 t=264s eta=0.2min
+[standard] update 20/20 reward=+1.999 grp_std=0.304 zero_std=0.00 kl_tok=+0.0002 loss=+0.0000 |g|=0.283 len=92 trunc=0.00 t=271s eta=0.0min
+[standard] saved adapter to D:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\outputs\task3_grpo\standard (4.5 min, peak VRAM 7.141 GiB)

@@ -1,0 +1,22 @@
+$ d:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\.venv\Scripts\python.exe -u -m task5_feedback.compare_feedback --config configs/feedback.yaml
+ dataset policy  exact_accuracy  format_compliance  response_tokens_mean  win_rate_vs_sft  verifier_judge_agreement
+     gsm    sft           0.277              0.350               274.147              NaN                       NaN
+     gsm   rlvr           0.303              0.380               274.323            0.503                     0.000
+     gsm  rlaif           0.280              0.347               274.780            0.498                     0.222
+transfer    sft           0.440              0.570               165.120              NaN                       NaN
+transfer   rlvr           0.450              0.570               164.380            0.510                     0.600
+transfer  rlaif           0.440              0.570               163.840            0.500                     0.000
+  category      mechanism  better_rate  tie_rate  wrong_rate
+ reasoning           rlvr         0.00      1.00        0.00
+ reasoning rlaif_pairwise         0.00      1.00        0.00
+ reasoning    rlaif_group         0.10      0.75        0.15
+   outcome           rlvr         1.00      0.00        0.00
+   outcome rlaif_pairwise         0.00      1.00        0.00
+   outcome    rlaif_group         0.30      0.55        0.15
+    filler           rlvr         0.00      1.00        0.00
+    filler rlaif_pairwise         0.00      0.75        0.25
+    filler    rlaif_group         0.10      0.50        0.40
+distractor           rlvr         1.00      0.00        0.00
+distractor rlaif_pairwise         0.25      0.70        0.05
+distractor    rlaif_group         0.40      0.50        0.10
+[task5:compare] wrote D:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\results\task5_feedback\feedback_source_comparison.json

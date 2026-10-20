@@ -52,8 +52,10 @@ def ppo_policy_loss(new_logp, old_logp, advantage, mask, eps=0.2):
     surr1 = ratio * advantage
     surr2 = ratio.clamp(1.0 - eps, 1.0 + eps) * advantage
 
-    # Starter implementation: students must validate the clipping geometry carefully.
-    objective = torch.maximum(surr1, surr2)
+    # FIX: PPO takes the pessimistic (minimum) of the unclipped and clipped surrogates.
+    # The starter used torch.maximum, which always picks the more optimistic term: for A>0 it lets
+    # rho grow without bound (ratio*A > clip*A once rho > 1+eps), so clipping never constrains the update.
+    objective = torch.minimum(surr1, surr2)
 
     loss = -masked_mean(objective, mask)
     affected = ((ratio < (1.0 - eps)) | (ratio > (1.0 + eps))).float()

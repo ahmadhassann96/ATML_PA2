@@ -1,0 +1,305 @@
+{
+  "policies": {
+    "sft": {
+      "n_safe": 250,
+      "n_unsafe": 200,
+      "safe_answer_rate": 0.568,
+      "safe_answer_rate_ci95": [
+        0.508,
+        0.628
+      ],
+      "over_refusal_rate": 0.0,
+      "over_refusal_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "unsafe_compliance_rate": 0.0,
+      "unsafe_compliance_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "justified_refusal_rate": 0.88,
+      "justified_refusal_rate_ci95": [
+        0.835,
+        0.92
+      ],
+      "refusal_on_safe_rate": 0.424,
+      "refusal_on_safe_rate_ci95": [
+        0.364,
+        0.484
+      ],
+      "refusal_on_unsafe_rate": 0.88,
+      "refusal_on_unsafe_rate_ci95": [
+        0.835,
+        0.92
+      ],
+      "ambiguous_rate": 0.0,
+      "ambiguous_rate_safe": 0.0,
+      "class_inconsistent_rate_safe": 0.432,
+      "keyword_refusal_rate_safe": 0.516,
+      "ambiguous_rate_unsafe": 0.0,
+      "class_inconsistent_rate_unsafe": 0.12,
+      "keyword_refusal_rate_unsafe": 0.975,
+      "parse_failure_rate": 0.0,
+      "response_tokens_mean": 107.83777777777777,
+      "response_tokens_std": 80.44831546855656,
+      "response_tokens_safe_mean": 135.46,
+      "response_tokens_unsafe_mean": 73.31,
+      "truncation_rate": 0.11777777777777777
+    },
+    "dpo": {
+      "n_safe": 250,
+      "n_unsafe": 200,
+      "safe_answer_rate": 0.564,
+      "safe_answer_rate_ci95": [
+        0.508,
+        0.628
+      ],
+      "over_refusal_rate": 0.0,
+      "over_refusal_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "unsafe_compliance_rate": 0.0,
+      "unsafe_compliance_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "justified_refusal_rate": 0.87,
+      "justified_refusal_rate_ci95": [
+        0.82,
+        0.915
+      ],
+      "refusal_on_safe_rate": 0.42,
+      "refusal_on_safe_rate_ci95": [
+        0.36,
+        0.476
+      ],
+      "refusal_on_unsafe_rate": 0.87,
+      "refusal_on_unsafe_rate_ci95": [
+        0.82,
+        0.915
+      ],
+      "ambiguous_rate": 0.0,
+      "ambiguous_rate_safe": 0.0,
+      "class_inconsistent_rate_safe": 0.436,
+      "keyword_refusal_rate_safe": 0.504,
+      "ambiguous_rate_unsafe": 0.0,
+      "class_inconsistent_rate_unsafe": 0.13,
+      "keyword_refusal_rate_unsafe": 0.97,
+      "parse_failure_rate": 0.0,
+      "response_tokens_mean": 110.00666666666666,
+      "response_tokens_std": 82.29914242836583,
+      "response_tokens_safe_mean": 137.424,
+      "response_tokens_unsafe_mean": 75.735,
+      "truncation_rate": 0.1111111111111111
+    },
+    "ppo": {
+      "n_safe": 250,
+      "n_unsafe": 200,
+      "safe_answer_rate": 0.58,
+      "safe_answer_rate_ci95": [
+        0.52,
+        0.64
+      ],
+      "over_refusal_rate": 0.0,
+      "over_refusal_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "unsafe_compliance_rate": 0.0,
+      "unsafe_compliance_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "justified_refusal_rate": 0.885,
+      "justified_refusal_rate_ci95": [
+        0.84,
+        0.93
+      ],
+      "refusal_on_safe_rate": 0.412,
+      "refusal_on_safe_rate_ci95": [
+        0.3559,
+        0.468
+      ],
+      "refusal_on_unsafe_rate": 0.885,
+      "refusal_on_unsafe_rate_ci95": [
+        0.84,
+        0.93
+      ],
+      "ambiguous_rate": 0.0,
+      "ambiguous_rate_safe": 0.0,
+      "class_inconsistent_rate_safe": 0.42,
+      "keyword_refusal_rate_safe": 0.52,
+      "ambiguous_rate_unsafe": 0.0,
+      "class_inconsistent_rate_unsafe": 0.115,
+      "keyword_refusal_rate_unsafe": 0.975,
+      "parse_failure_rate": 0.0,
+      "response_tokens_mean": 107.51555555555555,
+      "response_tokens_std": 80.19956208125261,
+      "response_tokens_safe_mean": 134.652,
+      "response_tokens_unsafe_mean": 73.595,
+      "truncation_rate": 0.12
+    },
+    "grpo": {
+      "n_safe": 250,
+      "n_unsafe": 200,
+      "safe_answer_rate": 0.568,
+      "safe_answer_rate_ci95": [
+        0.508,
+        0.6280999999999999
+      ],
+      "over_refusal_rate": 0.0,
+      "over_refusal_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "unsafe_compliance_rate": 0.0,
+      "unsafe_compliance_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "justified_refusal_rate": 0.885,
+      "justified_refusal_rate_ci95": [
+        0.8398749999999999,
+        0.93
+      ],
+      "refusal_on_safe_rate": 0.42,
+      "refusal_on_safe_rate_ci95": [
+        0.36,
+        0.48
+      ],
+      "refusal_on_unsafe_rate": 0.885,
+      "refusal_on_unsafe_rate_ci95": [
+        0.8398749999999999,
+        0.93
+      ],
+      "ambiguous_rate": 0.0,
+      "ambiguous_rate_safe": 0.0,
+      "class_inconsistent_rate_safe": 0.432,
+      "keyword_refusal_rate_safe": 0.516,
+      "ambiguous_rate_unsafe": 0.0,
+      "class_inconsistent_rate_unsafe": 0.115,
+      "keyword_refusal_rate_unsafe": 0.975,
+      "parse_failure_rate": 0.0,
+      "response_tokens_mean": 106.63777777777777,
+      "response_tokens_std": 79.54475969579472,
+      "response_tokens_safe_mean": 134.048,
+      "response_tokens_unsafe_mean": 72.375,
+      "truncation_rate": 0.1111111111111111
+    }
+  },
+  "share_of_responses_differing_from_sft": {
+    "dpo": 0.64,
+    "grpo": 0.17555555555555555,
+    "ppo": 0.16666666666666666
+  },
+  "manual_audit": {
+    "n_sheet_items": 115,
+    "n_labelled_items": 115,
+    "invalid_labels": [],
+    "agreement_items": 0.7652173913043478,
+    "kappa_items": 0.5949119373776908,
+    "n_items": 115,
+    "agreement_policy_rows": 0.7666666666666667,
+    "kappa_policy_rows": 0.5799868745898311,
+    "n_policy_rows": 240,
+    "agreement_items_safe": 0.6515151515151515,
+    "agreement_items_unsafe": 0.9183673469387755,
+    "agreement_by_policy": {
+      "dpo": 0.7666666666666667,
+      "grpo": 0.7666666666666667,
+      "ppo": 0.7666666666666667,
+      "sft": 0.7666666666666667
+    },
+    "ambiguous_rate_ai_items": 0.0,
+    "ambiguous_rate_manual_items": 0.034782608695652174,
+    "confusion_items": {
+      "SAFE_ANSWER": {
+        "SAFE_ANSWER": 41,
+        "JUSTIFIED_REFUSAL": 1,
+        "UNSAFE_COMPLIANCE": 0,
+        "OVER_REFUSAL": 1,
+        "AMBIGUOUS": 1
+      },
+      "JUSTIFIED_REFUSAL": {
+        "SAFE_ANSWER": 8,
+        "JUSTIFIED_REFUSAL": 47,
+        "UNSAFE_COMPLIANCE": 0,
+        "OVER_REFUSAL": 12,
+        "AMBIGUOUS": 3
+      },
+      "UNSAFE_COMPLIANCE": {
+        "SAFE_ANSWER": 1,
+        "JUSTIFIED_REFUSAL": 0,
+        "UNSAFE_COMPLIANCE": 0,
+        "OVER_REFUSAL": 0,
+        "AMBIGUOUS": 0
+      },
+      "OVER_REFUSAL": {
+        "SAFE_ANSWER": 0,
+        "JUSTIFIED_REFUSAL": 0,
+        "UNSAFE_COMPLIANCE": 0,
+        "OVER_REFUSAL": 0,
+        "AMBIGUOUS": 0
+      },
+      "AMBIGUOUS": {
+        "SAFE_ANSWER": 0,
+        "JUSTIFIED_REFUSAL": 0,
+        "UNSAFE_COMPLIANCE": 0,
+        "OVER_REFUSAL": 0,
+        "AMBIGUOUS": 0
+      }
+    },
+    "audited_rates_manual_vs_ai": {
+      "dpo": {
+        "safe_answer_manual": 0.6,
+        "over_refusal_manual": 0.26666666666666666,
+        "unsafe_compliance_manual": 0.0,
+        "justified_refusal_manual": 0.9333333333333333,
+        "refusal_on_safe_manual": 0.36666666666666664,
+        "safe_answer_ai": 0.5333333333333333,
+        "over_refusal_ai": 0.0,
+        "unsafe_compliance_ai": 0.0,
+        "justified_refusal_ai": 0.9333333333333333,
+        "refusal_on_safe_ai": 0.43333333333333335
+      },
+      "grpo": {
+        "safe_answer_manual": 0.6333333333333333,
+        "over_refusal_manual": 0.23333333333333334,
+        "unsafe_compliance_manual": 0.0,
+        "justified_refusal_manual": 0.9,
+        "refusal_on_safe_manual": 0.3333333333333333,
+        "safe_answer_ai": 0.5,
+        "over_refusal_ai": 0.0,
+        "unsafe_compliance_ai": 0.0,
+        "justified_refusal_ai": 0.9333333333333333,
+        "refusal_on_safe_ai": 0.5
+      },
+      "ppo": {
+        "safe_answer_manual": 0.6333333333333333,
+        "over_refusal_manual": 0.23333333333333334,
+        "unsafe_compliance_manual": 0.0,
+        "justified_refusal_manual": 0.8666666666666667,
+        "refusal_on_safe_manual": 0.3333333333333333,
+        "safe_answer_ai": 0.5333333333333333,
+        "over_refusal_ai": 0.0,
+        "unsafe_compliance_ai": 0.0,
+        "justified_refusal_ai": 0.9333333333333333,
+        "refusal_on_safe_ai": 0.4666666666666667
+      },
+      "sft": {
+        "safe_answer_manual": 0.6333333333333333,
+        "over_refusal_manual": 0.23333333333333334,
+        "unsafe_compliance_manual": 0.0,
+        "justified_refusal_manual": 0.8666666666666667,
+        "refusal_on_safe_manual": 0.3333333333333333,
+        "safe_answer_ai": 0.5333333333333333,
+        "over_refusal_ai": 0.0,
+        "unsafe_compliance_ai": 0.0,
+        "justified_refusal_ai": 0.9333333333333333,
+        "refusal_on_safe_ai": 0.4666666666666667
+      }
+    }
+  }
+}

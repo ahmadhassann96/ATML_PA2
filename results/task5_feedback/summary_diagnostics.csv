@@ -1,0 +1,13 @@
+category,better,worse,mechanism,n,better_rate,tie_rate,wrong_rate,better_lo,better_hi,wrong_lo,wrong_hi
+reasoning,clean,corrupt_reasoning,rlvr,20,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+reasoning,clean,corrupt_reasoning,rlaif_pairwise,20,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+reasoning,clean,corrupt_reasoning,rlaif_group,20,0.1,0.75,0.15,0.0,0.25,0.0,0.3
+outcome,clean,wrong_final,rlvr,20,1.0,0.0,0.0,1.0,1.0,0.0,0.0
+outcome,clean,wrong_final,rlaif_pairwise,20,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+outcome,clean,wrong_final,rlaif_group,20,0.3,0.55,0.15,0.1,0.5,0.0,0.3
+filler,clean,filler,rlvr,20,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+filler,clean,filler,rlaif_pairwise,20,0.0,0.75,0.25,0.0,0.0,0.1,0.45
+filler,clean,filler,rlaif_group,20,0.1,0.5,0.4,0.0,0.25,0.2,0.6
+distractor,clean,gold_distractor,rlvr,20,1.0,0.0,0.0,1.0,1.0,0.0,0.0
+distractor,clean,gold_distractor,rlaif_pairwise,20,0.25,0.7,0.05,0.1,0.45,0.0,0.15
+distractor,clean,gold_distractor,rlaif_group,20,0.4,0.5,0.1,0.2,0.6,0.0,0.25

@@ -1,0 +1,71 @@
+{
+  "name": "length_balanced",
+  "adapter": "outputs/task1_dpo/length_balanced",
+  "eval_file": "data/dpo_length_stratified_eval.jsonl",
+  "seed": 6304,
+  "generation": {
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "do_sample": true,
+    "max_new_tokens": 256
+  },
+  "pairs": {
+    "beta_for_loss": 0.1,
+    "n_dropped_long_prompts": 9,
+    "overall": {
+      "n_pairs": 237,
+      "dpo_loss": 0.6758797193881328,
+      "preference_accuracy": 0.620253164556962,
+      "preference_accuracy_ci95": [
+        0.5569620253164557,
+        0.6751054852320675
+      ],
+      "mean_margin": 0.4443790884963571,
+      "policy_logp_prefers_chosen": 0.5654008438818565,
+      "ref_logp_prefers_chosen": 0.569620253164557,
+      "chosen_longer_frac": 0.46835443037974683
+    },
+    "by_stratum": {
+      "length_matched": {
+        "n_pairs": 80,
+        "dpo_loss": 0.6790082868188619,
+        "preference_accuracy": 0.575,
+        "preference_accuracy_ci95": [
+          0.4625,
+          0.6875
+        ],
+        "mean_margin": 0.3314486123621464,
+        "policy_logp_prefers_chosen": 0.6,
+        "ref_logp_prefers_chosen": 0.6125,
+        "chosen_longer_frac": 0.45
+      },
+      "preferred_longer": {
+        "n_pairs": 78,
+        "dpo_loss": 0.7202716699013343,
+        "preference_accuracy": 0.48717948717948717,
+        "preference_accuracy_ci95": [
+          0.3717948717948718,
+          0.6025641025641025
+        ],
+        "mean_margin": -0.45353014041215944,
+        "policy_logp_prefers_chosen": 0.1282051282051282,
+        "ref_logp_prefers_chosen": 0.1282051282051282,
+        "chosen_longer_frac": 0.9615384615384616
+      },
+      "rejected_longer": {
+        "n_pairs": 79,
+        "dpo_loss": 0.6288815227490437,
+        "preference_accuracy": 0.7974683544303798,
+        "preference_accuracy_ci95": [
+          0.7088607594936709,
+          0.8860759493670886
+        ],
+        "mean_margin": 1.4452823536305488,
+        "policy_logp_prefers_chosen": 0.9620253164556962,
+        "ref_logp_prefers_chosen": 0.9620253164556962,
+        "chosen_longer_frac": 0.0
+      }
+    }
+  },
+  "wall_clock_s": 76.5
+}

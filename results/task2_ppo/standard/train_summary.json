@@ -1,0 +1,8 @@
+{
+  "run_name": "standard",
+  "updates": 20,
+  "generated_tokens": 4330,
+  "wall_clock_s": 182.7,
+  "peak_vram_gib": 6.921,
+  "adapter": "D:\\Junior\\CS6304 - ATML\\PA2\\ATML-PA2-LLM-PostTraining\\outputs\\task2_ppo\\standard"
+}

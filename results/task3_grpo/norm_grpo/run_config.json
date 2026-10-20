@@ -1,0 +1,37 @@
+{
+  "run_name": "norm_grpo",
+  "start_policy": "checkpoints/grpo_midpoint_policy",
+  "loss_type": "grpo",
+  "updates": 8,
+  "prompts_per_update": 1,
+  "num_generations": 4,
+  "policy_epochs": 1,
+  "clip_epsilon": 0.2,
+  "kl_beta": 0.1,
+  "kl_estimator": "k3: exp(ref-new) - (ref-new) - 1, token mean over loss mask",
+  "learning_rate": 5e-06,
+  "max_prompt_length": 256,
+  "max_completion_length": 512,
+  "mask_truncated_completions": true,
+  "advantage": "(r - group mean) / (group population std + 1e-6); truncated completions kept in group statistics",
+  "zero_std_tolerance": 1e-06,
+  "dropout_modules_disabled": 56,
+  "per_seq_grad": true,
+  "generation": {
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "do_sample": true
+  },
+  "seed": 6304,
+  "prompt_ids": [
+    "b70ebc9bc95bf8332673d0762848d1005ba550cdfeea97b46887e2c1ac794f92",
+    "5ecbed0e67a312888917844226da7f1681314d867338b82c81b0c7845d4c3510",
+    "66d02a300fac38a49c06e0fe08f4a039cd6cf597c39d5d3cc5e1b64968f70fbd",
+    "184b5777cf166a9f4970d3170e88a14b9855c477b326041a5ad9387695b3934e",
+    "1181f1e92b8199b3987cc50ad50416fce096e3d1bebd05a402147b348b535732",
+    "108b1eac65d8a6ea8f4cc0ac367e236e01a85c57ba634318bc6a2888edf0726b",
+    "7fcfdb83d492d05da0ce1f5f91203752b5bdaed59b37d24084c684773be7e67b",
+    "03a9535da588c06b47cbdc298748e0f71a651e1f391c49bf96f05027382aee23"
+  ],
+  "output": "D:\\Junior\\CS6304 - ATML\\PA2\\ATML-PA2-LLM-PostTraining\\outputs\\task3_grpo\\norm_grpo"
+}

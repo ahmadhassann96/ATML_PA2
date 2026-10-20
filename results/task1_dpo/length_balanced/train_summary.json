@@ -1,0 +1,7 @@
+{
+  "run_name": "length_balanced",
+  "updates": 90,
+  "wall_clock_s": 788.0,
+  "peak_vram_gib": 4.434,
+  "adapter": "D:\\Junior\\CS6304 - ATML\\PA2\\ATML-PA2-LLM-PostTraining\\outputs\\task1_dpo\\length_balanced"
+}

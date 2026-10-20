@@ -1,0 +1,45 @@
+{
+  "name": "norm_grpo",
+  "adapter": "outputs/task3_grpo/norm_grpo",
+  "n_prompts": 96,
+  "n_prompts_skipped_long": 15,
+  "max_new_tokens": 768,
+  "seed": 6304,
+  "generation": {
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "do_sample": true
+  },
+  "reward_raw_mean": 1.7854944864908855,
+  "reward_raw_std": 1.325240678308134,
+  "reward_raw_ci95": [
+    1.4979607899983725,
+    2.0425503412882486
+  ],
+  "reward_mean": 1.7854944864908855,
+  "reward_ci95": [
+    1.4979607899983725,
+    2.0425503412882486
+  ],
+  "missing_eos_penalty": 0.0,
+  "kl_token_mean": 3.2830606971126635e-05,
+  "kl_seq_mean": 0.009913817348812396,
+  "kl_seq_ci95": [
+    -0.0035837171686580404,
+    0.024546238446055208
+  ],
+  "entropy_mean": 0.9415548627342408,
+  "response_tokens": {
+    "mean": 301.96875,
+    "std": 265.8382361012755,
+    "median": 229.5,
+    "q25": 61.25,
+    "q75": 529.5,
+    "iqr": 468.25,
+    "max": 768.0,
+    "n": 96
+  },
+  "truncation_rate": 0.10416666666666667,
+  "eos_rate": 0.8958333333333334,
+  "wall_clock_s": 191.9
+}

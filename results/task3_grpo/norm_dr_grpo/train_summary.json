@@ -1,0 +1,9 @@
+{
+  "run_name": "norm_dr_grpo",
+  "loss_type": "dr_grpo",
+  "updates": 8,
+  "generated_tokens": 6889,
+  "wall_clock_s": 116.2,
+  "peak_vram_gib": 7.136,
+  "adapter": "D:\\Junior\\CS6304 - ATML\\PA2\\ATML-PA2-LLM-PostTraining\\outputs\\task3_grpo\\norm_dr_grpo"
+}

@@ -1,0 +1,7 @@
+dataset,policy,n,exact_accuracy,exact_accuracy_lo,exact_accuracy_hi,format_compliance,response_tokens_mean,response_tokens_median,truncation_rate,win_rate_vs_sft,win_rate_lo,win_rate_hi,wins,losses,judge_ties,identical_to_sft,verifier_decisive_pairs,verifier_judge_agreement,judge_prefers_verified_wrong,judge_tie_rate_when_verifier_ties
+gsm,sft,300,0.27666666666666667,0.22666666666666666,0.33,0.35,274.14666666666665,261.0,0.023333333333333334,,,,,,,,,,,
+gsm,rlvr,300,0.30333333333333334,0.25,0.35008333333333325,0.38,274.3233333333333,258.5,0.02,0.5033333333333333,0.495,0.5116666666666667,4.0,2.0,48.0,246.0,10.0,0.0,2.0,0.9090909090909091
+gsm,rlaif,300,0.28,0.23,0.33,0.3466666666666667,274.78,261.0,0.02,0.49833333333333335,0.49,0.505,2.0,3.0,48.0,247.0,9.0,0.2222222222222222,0.0,0.9318181818181818
+transfer,sft,100,0.44,0.34,0.53,0.57,165.12,143.0,0.0,,,,,,,,,,,
+transfer,rlvr,100,0.45,0.35,0.55,0.57,164.38,140.0,0.0,0.51,0.495,0.53,3.0,1.0,8.0,88.0,5.0,0.6,0.0,0.8571428571428571
+transfer,rlaif,100,0.44,0.34,0.53,0.57,163.84,143.0,0.0,0.5,0.5,0.5,0.0,0.0,7.0,93.0,2.0,0.0,0.0,1.0

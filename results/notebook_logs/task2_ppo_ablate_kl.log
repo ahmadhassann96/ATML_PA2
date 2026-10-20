@@ -1,0 +1,4 @@
+$ d:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\.venv\Scripts\python.exe -u -m task2_ppo.ablate_kl --config configs/ppo.yaml
+KL beta conditions: [0.0, 0.1, 0.2]
+Fork update budget: 8
+wrote D:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\results\task2_ppo\summary_kl.csv

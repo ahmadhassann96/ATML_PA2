@@ -1,0 +1,8 @@
+$ d:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\.venv\Scripts\python.exe -u -m task2_ppo.analyze_clipping --config configs/ppo.yaml
+W1010 15:23:27.982000 24936 .venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+[clip] cached batch: 29 rollouts / 7494 response tokens used (0 skipped: re-tokenisation length mismatch or missing prompt; 3 dropped as misaligned)
+[clip] validation: {'n_rollouts': 29, 'n_tokens': 7494, 'dropped_misaligned': [671, 175, 961], 'alignment_rule': 'drop a rollout if mean |ref diff| > 0.1 or max |ref diff| > 2.0', 'ref_logp_abs_diff_mean': 0.0165, 'ref_logp_abs_diff_max': 0.33744, 'midpoint_vs_cached_old_abs_diff_mean': 0.01612, 'midpoint_vs_cached_old_abs_diff_max': 0.37605, 'critic_value_abs_diff_mean': 0.04006, 'critic_value_abs_diff_max': 0.38672}
+[clip] eps=0.05: midpoint clip=0.0991 affected=0.0488 | after 2 steps clip=0.0986 affected=0.0487 surrogate -0.0001 -> clipped -0.0013
+[clip] eps=0.2: midpoint clip=0.0011 affected=0.0007 | after 2 steps clip=0.0011 affected=0.0007 surrogate -0.0001 -> clipped -0.0002
+[clip] eps=0.5: midpoint clip=0.0000 affected=0.0000 | after 2 steps clip=0.0000 affected=0.0000 surrogate -0.0001 -> clipped -0.0001
+wrote D:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\results\task2_ppo\summary_clipping.csv

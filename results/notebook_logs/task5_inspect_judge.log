@@ -1,0 +1,18 @@
+$ d:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\.venv\Scripts\python.exe -u -m task5_feedback.inspect_judge --config configs/feedback.yaml
+W1011 16:09:55.873000 4336 .venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.21s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:09<00:00,  4.69s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:09<00:00,  4.92s/it]
+[inspect_judge] 129 comparisons
+[inspect_judge] 1/129
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[inspect_judge] 21/129
+[inspect_judge] 41/129
+[inspect_judge] 61/129
+[inspect_judge] 81/129
+[inspect_judge] 101/129
+[inspect_judge] 121/129
+[inspect_judge] decisions {'TIE': 112, 'A': 9, 'B': 8} | ties: 112 explicit, 0 parse fall-backs | 48-token re-decode of fall-backs: {} | reproduces cache: 1.000
+[inspect_judge] most common raw 4-token outputs: {'TIE': 112, 'B': 8, 'A,': 7, 'A': 2}

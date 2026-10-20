@@ -1,0 +1,7 @@
+$ d:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\.venv\Scripts\python.exe -u -m task3_grpo.analyze_group_size --config configs/grpo.yaml
+Cached prompts: 24 | total generations: 192
+Group sizes to analyze: [2, 4, 8]
+wrote D:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\results\task3_grpo\group_size_study.csv
+K=2: informative 0.947 (tol0.1 0.743) mean std 0.386 centred^2 0.322 adv partition var 0.535
+K=4: informative 0.958 (tol0.1 0.923) mean std 0.549 centred^2 0.480 adv partition var 0.193
+K=8: informative 0.958 (tol0.1 0.958) mean std 0.619 centred^2 0.560 adv partition var 0.000

@@ -1,0 +1,24 @@
+$ d:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\.venv\Scripts\python.exe -u -m task1_dpo.train --config configs/dpo.yaml --run-name standard
+W1008 02:02:53.190000 28956 .venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+[standard] 1444 pairs (56 dropped for long prompts), beta=0.1, 722 micro-batches/epoch, 91 optimizer updates
+[standard] update 1/91 loss=0.6931 acc=0.000 margin=0.000 |g|=1.923 t=12s eta=17.6min
+[standard] update 5/91 loss=0.6943 acc=0.500 margin=-0.022 |g|=2.009 t=53s eta=15.3min
+[standard] update 10/91 loss=0.6935 acc=0.500 margin=-0.006 |g|=1.792 t=104s eta=14.1min
+[standard] update 15/91 loss=0.6905 acc=0.625 margin=0.054 |g|=2.042 t=163s eta=13.7min
+[standard] update 20/91 loss=0.6932 acc=0.438 margin=0.004 |g|=2.540 t=218s eta=12.9min
+[standard] update 25/91 loss=0.6855 acc=0.688 margin=0.158 |g|=2.116 t=275s eta=12.1min
+[standard] update 30/91 loss=0.6929 acc=0.500 margin=0.010 |g|=2.103 t=333s eta=11.3min
+[standard] update 35/91 loss=0.6997 acc=0.438 margin=-0.118 |g|=2.270 t=392s eta=10.5min
+[standard] update 40/91 loss=0.6858 acc=0.625 margin=0.156 |g|=2.113 t=450s eta=9.6min
+[standard] update 45/91 loss=0.6932 acc=0.688 margin=0.010 |g|=2.113 t=504s eta=8.6min
+[standard] update 50/91 loss=0.6862 acc=0.625 margin=0.144 |g|=2.231 t=557s eta=7.6min
+[standard] update 55/91 loss=0.6794 acc=0.812 margin=0.281 |g|=1.959 t=613s eta=6.7min
+[standard] update 60/91 loss=0.6788 acc=0.688 margin=0.297 |g|=1.918 t=667s eta=5.7min
+[standard] update 65/91 loss=0.6764 acc=0.750 margin=0.355 |g|=1.889 t=722s eta=4.8min
+[standard] update 70/91 loss=0.6725 acc=0.688 margin=0.437 |g|=2.272 t=785s eta=3.9min
+[standard] update 75/91 loss=0.6998 acc=0.562 margin=-0.114 |g|=2.239 t=843s eta=3.0min
+[standard] update 80/91 loss=0.6622 acc=0.688 margin=0.666 |g|=2.252 t=894s eta=2.0min
+[standard] update 85/91 loss=0.6865 acc=0.500 margin=0.174 |g|=2.172 t=952s eta=1.1min
+[standard] update 90/91 loss=0.7182 acc=0.438 margin=-0.424 |g|=2.444 t=1013s eta=0.2min
+[standard] update 91/91 loss=0.6707 acc=0.500 margin=0.517 |g|=1.050 t=1017s eta=0.0min
+[standard] saved adapter to D:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\outputs\task1_dpo\standard (17.0 min)

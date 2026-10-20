@@ -1,0 +1,27 @@
+$ d:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\.venv\Scripts\python.exe -u -m task5_feedback.evaluate_math --config configs/feedback.yaml --dataset transfer
+[task5:transfer] 100 problems | policies ['sft', 'rlvr', 'rlaif'] | greedy, cap 512
+[task5:transfer:sft] generation batch 1/4 (0s elapsed)
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[task5:transfer:sft] generation batch 2/4 (14s elapsed)
+[task5:transfer:sft] generation batch 3/4 (29s elapsed)
+[task5:transfer:sft] generation batch 4/4 (39s elapsed)
+[task5:transfer] sft: accuracy 0.440 format 0.570 len 165 trunc 0.000
+W1011 00:50:35.284000 30692 .venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+[task5:transfer:rlvr] generation batch 1/4 (0s elapsed)
+[task5:transfer:rlvr] generation batch 2/4 (16s elapsed)
+[task5:transfer:rlvr] generation batch 3/4 (32s elapsed)
+[task5:transfer:rlvr] generation batch 4/4 (43s elapsed)
+[task5:transfer] rlvr: accuracy 0.450 format 0.570 len 164 trunc 0.000
+[task5:transfer:rlaif] generation batch 1/4 (0s elapsed)
+[task5:transfer:rlaif] generation batch 2/4 (15s elapsed)
+[task5:transfer:rlaif] generation batch 3/4 (31s elapsed)
+[task5:transfer:rlaif] generation batch 4/4 (43s elapsed)
+[task5:transfer] rlaif: accuracy 0.440 format 0.570 len 164 trunc 0.000
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:05<00:05,  5.42s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:08<00:00,  3.94s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:08<00:00,  4.16s/it]
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[task5:transfer:judge] rlvr vs sft 26/100
+[task5:transfer] rlvr vs sft: win rate 0.510 (W3/L1/T8 +88 identical) | verifier-judge agreement 0.6
+[task5:transfer] rlaif vs sft: win rate 0.500 (W0/L0/T7 +93 identical) | verifier-judge agreement 0.0

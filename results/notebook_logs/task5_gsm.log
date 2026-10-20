@@ -1,0 +1,50 @@
+$ d:\Junior\CS6304 - ATML\PA2\ATML-PA2-LLM-PostTraining\.venv\Scripts\python.exe -u -m task5_feedback.evaluate_math --config configs/feedback.yaml --dataset gsm
+[task5:gsm] 300 problems | policies ['sft', 'rlvr', 'rlaif'] | greedy, cap 512
+[task5:gsm:sft] generation batch 1/10 (0s elapsed)
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[task5:gsm:sft] generation batch 2/10 (26s elapsed)
+[task5:gsm:sft] generation batch 3/10 (46s elapsed)
+[task5:gsm:sft] generation batch 4/10 (67s elapsed)
+[task5:gsm:sft] generation batch 5/10 (89s elapsed)
+[task5:gsm:sft] generation batch 6/10 (114s elapsed)
+[task5:gsm:sft] generation batch 7/10 (135s elapsed)
+[task5:gsm:sft] generation batch 8/10 (162s elapsed)
+[task5:gsm:sft] generation batch 9/10 (189s elapsed)
+[task5:gsm:sft] generation batch 10/10 (210s elapsed)
+[task5:gsm] sft: accuracy 0.277 format 0.350 len 274 trunc 0.023
+W1011 00:38:58.000000 24972 .venv\Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+[task5:gsm:rlvr] generation batch 1/10 (0s elapsed)
+[task5:gsm:rlvr] generation batch 2/10 (25s elapsed)
+[task5:gsm:rlvr] generation batch 3/10 (47s elapsed)
+[task5:gsm:rlvr] generation batch 4/10 (70s elapsed)
+[task5:gsm:rlvr] generation batch 5/10 (93s elapsed)
+[task5:gsm:rlvr] generation batch 6/10 (121s elapsed)
+[task5:gsm:rlvr] generation batch 7/10 (147s elapsed)
+[task5:gsm:rlvr] generation batch 8/10 (173s elapsed)
+[task5:gsm:rlvr] generation batch 9/10 (202s elapsed)
+[task5:gsm:rlvr] generation batch 10/10 (225s elapsed)
+[task5:gsm] rlvr: accuracy 0.303 format 0.380 len 274 trunc 0.020
+[task5:gsm:rlaif] generation batch 1/10 (0s elapsed)
+[task5:gsm:rlaif] generation batch 2/10 (25s elapsed)
+[task5:gsm:rlaif] generation batch 3/10 (47s elapsed)
+[task5:gsm:rlaif] generation batch 4/10 (70s elapsed)
+[task5:gsm:rlaif] generation batch 5/10 (93s elapsed)
+[task5:gsm:rlaif] generation batch 6/10 (121s elapsed)
+[task5:gsm:rlaif] generation batch 7/10 (147s elapsed)
+[task5:gsm:rlaif] generation batch 8/10 (176s elapsed)
+[task5:gsm:rlaif] generation batch 9/10 (205s elapsed)
+[task5:gsm:rlaif] generation batch 10/10 (228s elapsed)
+[task5:gsm] rlaif: accuracy 0.280 format 0.347 len 275 trunc 0.020
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:05<00:05,  5.35s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:08<00:00,  3.90s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:08<00:00,  4.12s/it]
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[task5:gsm:judge] rlvr vs sft 51/300
+[task5:gsm:judge] rlvr vs sft 226/300
+[task5:gsm:judge] rlaif vs sft 1/300
+[task5:gsm:judge] rlaif vs sft 51/300
+[task5:gsm:judge] rlaif vs sft 76/300
+[task5:gsm:judge] rlaif vs sft 251/300
+[task5:gsm] rlvr vs sft: win rate 0.503 (W4/L2/T48 +246 identical) | verifier-judge agreement 0.0
+[task5:gsm] rlaif vs sft: win rate 0.498 (W2/L3/T48 +247 identical) | verifier-judge agreement 0.2222222222222222

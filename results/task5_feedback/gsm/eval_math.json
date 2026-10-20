@@ -1,0 +1,116 @@
+{
+  "dataset": "gsm",
+  "n_problems": 300,
+  "decoding": "greedy",
+  "max_new_tokens": 512,
+  "policies": {
+    "sft": {
+      "n": 300,
+      "exact_accuracy": 0.27666666666666667,
+      "exact_accuracy_ci95": [
+        0.22666666666666666,
+        0.33
+      ],
+      "format_compliance": 0.35,
+      "truncation_rate": 0.023333333333333334,
+      "response_tokens_mean": 274.14666666666665,
+      "response_tokens_std": 86.25194773968232,
+      "response_tokens_median": 261.0,
+      "failure_types": {
+        "no_designated_final": 188,
+        "correct": 83,
+        "wrong_final": 22,
+        "no_final_truncated": 7
+      }
+    },
+    "rlvr": {
+      "n": 300,
+      "exact_accuracy": 0.30333333333333334,
+      "exact_accuracy_ci95": [
+        0.25,
+        0.35008333333333325
+      ],
+      "format_compliance": 0.38,
+      "truncation_rate": 0.02,
+      "response_tokens_mean": 274.3233333333333,
+      "response_tokens_std": 84.92588212998176,
+      "response_tokens_median": 258.5,
+      "failure_types": {
+        "no_designated_final": 180,
+        "correct": 91,
+        "wrong_final": 23,
+        "no_final_truncated": 6
+      }
+    },
+    "rlaif": {
+      "n": 300,
+      "exact_accuracy": 0.28,
+      "exact_accuracy_ci95": [
+        0.23,
+        0.33
+      ],
+      "format_compliance": 0.3466666666666667,
+      "truncation_rate": 0.02,
+      "response_tokens_mean": 274.78,
+      "response_tokens_std": 85.55126104661852,
+      "response_tokens_median": 261.0,
+      "failure_types": {
+        "no_designated_final": 190,
+        "correct": 84,
+        "wrong_final": 20,
+        "no_final_truncated": 6
+      }
+    }
+  },
+  "pairwise_vs_sft": {
+    "rlvr": {
+      "n_pairs": 300,
+      "win_rate_vs_sft": 0.5033333333333333,
+      "win_rate_ci95": [
+        0.495,
+        0.5116666666666667
+      ],
+      "wins": 4,
+      "losses": 2,
+      "ties_judge": 48,
+      "ties_identical_responses": 246,
+      "verifier_decisive_pairs": 10,
+      "verifier_judge_agreement_on_decisive": 0.0,
+      "judge_prefers_verified_wrong": 2,
+      "judge_ties_on_decisive": 8,
+      "verifier_tie_pairs_nonidentical": 44,
+      "judge_tie_rate_when_verifier_ties": 0.9090909090909091
+    },
+    "rlaif": {
+      "n_pairs": 300,
+      "win_rate_vs_sft": 0.49833333333333335,
+      "win_rate_ci95": [
+        0.49,
+        0.505
+      ],
+      "wins": 2,
+      "losses": 3,
+      "ties_judge": 48,
+      "ties_identical_responses": 247,
+      "verifier_decisive_pairs": 9,
+      "verifier_judge_agreement_on_decisive": 0.2222222222222222,
+      "judge_prefers_verified_wrong": 0,
+      "judge_ties_on_decisive": 7,
+      "verifier_tie_pairs_nonidentical": 44,
+      "judge_tie_rate_when_verifier_ties": 0.9318181818181818
+    }
+  },
+  "judge_cost": {
+    "rlvr": {
+      "judge_calls_uncached": 54,
+      "judge_seconds": 19.7,
+      "seconds_per_uncached_call": 0.365
+    },
+    "rlaif": {
+      "judge_calls_uncached": 38,
+      "judge_seconds": 13.6,
+      "seconds_per_uncached_call": 0.358
+    }
+  },
+  "judge_model": "Qwen/Qwen2.5-3B-Instruct"
+}
